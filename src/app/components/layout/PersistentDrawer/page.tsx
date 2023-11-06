@@ -21,6 +21,8 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
+import styles from './page.module.css'
+
 const drawerWidth = 240;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
@@ -111,7 +113,7 @@ export default function PersistentDrawerLeft() {
             </Typography>
           </div>
 
-          <div>
+          <div className={styles.menuItems}>
             <ul style={{ display: 'flex', gap: '1em', listStyle: 'none', }}>
               <li>Início</li>
               <li>Sobre</li>

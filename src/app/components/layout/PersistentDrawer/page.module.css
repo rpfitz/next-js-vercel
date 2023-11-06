@@ -1,0 +1,10 @@
+.menuItems {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .menuItems {
+    display: none;
+  }
+}
+
