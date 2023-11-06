@@ -93,24 +93,27 @@ export default function PersistentDrawerLeft() {
       <AppBar style={{
         backgroundColor: 'white',
         color: 'black',
-
       }} position="fixed" open={open}>
         <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
 
-          <div style={{ display: 'flex', alignItems: 'center', }}>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              sx={{ mr: 2, ...(open && { display: 'none' }) }}
-            >
-              <MenuIcon />
-            </IconButton>
+          <div style={{
+            width: '100%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between'
+          }}>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                onClick={handleDrawerOpen}
+                edge="start"
+                className={styles.menuHambIcon}
+                sx={{ mr: 2, ...(open && { display: 'none' }) }}
+              >
+                <MenuIcon />
+              </IconButton>
 
-            <Typography noWrap component="div">
-              Dra Valéria Siqueira
-            </Typography>
+              <Typography noWrap component="div">Dra Valéria Siqueira</Typography>
           </div>
 
           <div className={styles.menuItems}>

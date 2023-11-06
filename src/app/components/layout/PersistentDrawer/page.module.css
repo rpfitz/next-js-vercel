@@ -2,9 +2,17 @@
   display: block;
 }
 
+.menuHambIcon {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .menuItems {
     display: none;
+  }
+
+  .menuHambIcon {
+    display: block;
   }
 }
 
