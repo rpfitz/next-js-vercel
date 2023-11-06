@@ -108,7 +108,7 @@ export default function PersistentDrawerLeft() {
               <MenuIcon />
             </IconButton>
 
-            <Typography variant="h6" noWrap component="div">
+            <Typography noWrap component="div">
               Dra Valéria Siqueira
             </Typography>
           </div>
