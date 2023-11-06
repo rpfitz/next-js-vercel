@@ -2,9 +2,13 @@
 
 import { useState } from "react";
 import InputSlider from "../../mui/SliderComponent/page"
+import Button from '@mui/material/Button';
+import styles from './page.module.css'
+import BasicMenu from "./BasicMenu/page";
 
 export default function HeaderComponent(menuItems: any) {
-  const MenuItemsExample = ['Início', 'Sobre', 'Soluções', 'Blog', 'Contato']
+  const MenuItemsExample: string[] = ['Início', 'Sobre', 'Serviços', 'Contato']
+  const logoName = 'Dra. Valéria Siqueira'
 
   const [larguraDoMenu, setLarguraDoMenu] = useState(100);
   const [alturaDoMenu, setAlturaDoMenu] = useState(80);
@@ -25,7 +29,7 @@ export default function HeaderComponent(menuItems: any) {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        border: '1px solid black',
+        // border: '1px solid black',
       }}>
 
         <div className="header" style={{
@@ -35,40 +39,44 @@ export default function HeaderComponent(menuItems: any) {
           justifyContent: 'space-between',
           alignItems: 'center',
           padding: '1em',
-          border: '1px solid black',
+          // border: '1px solid black',
+          borderBottom: '1px solid black',
         }}>
 
-          <div className="header-component left-side logo" style={{
-            border: '1px solid black',
+          <div className="header-component-left-side-logo" style={{
+            // border: '1px solid black',
           }}>
-            Logo
+            <div>{logoName}</div>
           </div>
 
-          <div className="header-component middle menu-list">
+          <div className={styles.headerComponentMiddleMenuList}>
             <ul style={{
               display: 'flex',
               gap: '1em',
               listStyle: 'none',
-              border: '1px solid black',
+              // border: '1px solid black',
             }}>
               {MenuItemsExample.map((item: any, index: any) => <li key={index}>{item}</li>)}
             </ul>
           </div>
 
-          <div className="header-component right-side" style={{
-            border: '1px solid black',
+          <div className={styles.headerComponentRightSide} style={{
+            // border: '1px solid black',
           }}>
-            Session 3
+            <Button className={styles.headerComponentRightSideButton} variant="contained">Marcar consulta</Button>
+            <div className={styles.headerComponentRightSideResponsiveMenu}>
+              <BasicMenu menuItems={MenuItemsExample} />
+            </div>
           </div>
         </div>
       </div>
 
-      <div style={{
+      {/* <div style={{
         margin: '2em',
       }}>
         <InputSlider title={'Largura do Menu'} value={larguraDoMenu} onChange={handleLarguraChange} />
         <InputSlider title={'Altura do Menu'} value={alturaDoMenu} onChange={handleAlturaChange} />
-      </div>
+      </div> */}
     </>
   )
 }
