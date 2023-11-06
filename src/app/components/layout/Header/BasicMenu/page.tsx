@@ -35,14 +35,14 @@ export default function BasicMenu({ menuItems }: any) {
           'aria-labelledby': 'basic-button',
         }}
       >
-        {
+        {/* {
           menuItems.map((item: any, index: any) => {
             return (
               <MenuItem key={index} onClick={handleClose}>{item}</MenuItem>
 
             )
           })
-        }
+        } */}
       </Menu>
     </div>
   );

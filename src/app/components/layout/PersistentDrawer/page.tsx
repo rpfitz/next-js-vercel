@@ -143,29 +143,65 @@ export default function PersistentDrawerLeft() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Início', 'Sobre', 'Serviços', 'Contato'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+          <ListItem key={'Início'} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary={'Início'} />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem key={'Sobre'} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary={'Sobre'} />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem key={'Serviços'} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary={'Serviços'} />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem key={'Contato'} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary={'Contato'} />
+            </ListItemButton>
+          </ListItem>
+
         </List>
+
         <Divider />
         <List>
-          {['Instagram', 'Facebook', 'Twitter'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+
+          <ListItem key={'Instagram'} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary={'Instagram'} />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem key={'Facebook'} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary={'Facebook'} />
+            </ListItemButton>
+          </ListItem>
+
         </List>
       </Drawer>
 
