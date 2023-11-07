@@ -20,8 +20,11 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import Button from '@mui/material/Button';
+import Image from 'next/image';
 
 import styles from './page.module.css'
+import HomePageComponent from './HomePage/page';
 
 const drawerWidth = 240;
 
@@ -96,32 +99,30 @@ export default function PersistentDrawerLeft() {
       }} position="fixed" open={open}>
         <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
 
-          <div style={{
-            width: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between'
-          }}>
-              <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                onClick={handleDrawerOpen}
-                edge="start"
-                className={styles.menuHambIcon}
-                sx={{ mr: 2, ...(open && { display: 'none' }) }}
-              >
-                <MenuIcon />
-              </IconButton>
+          <div className={styles.TentandoOne}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={styles.menuHambIcon}
+              sx={{ mr: 2, ...(open && { display: 'none' }) }}
+            >
+              <MenuIcon />
+            </IconButton>
 
-              <Typography noWrap component="div">Dra Valéria Siqueira</Typography>
+            {/* <Typography noWrap component="div" style={{ fontStyle: 'bold', fontSize: '1.2em'}}>Dra Valéria Siqueira</Typography> */}
+            <Image src={'/logovaleriasiqueira.png'} alt={'Dra. Valéria Siqueira'} width={180} height={35} />
+
           </div>
 
           <div className={styles.menuItems}>
-            <ul style={{ display: 'flex', gap: '1em', listStyle: 'none', }}>
+            <ul style={{ display: 'flex', gap: '2em', listStyle: 'none', fontWeight: 'bold', alignItems: 'center', justifyContent: 'center' }}>
               <li>Início</li>
               <li>Sobre</li>
               <li>Serviços</li>
               <li>Contato</li>
+              <Button style={{ height: 35, width: '15em', backgroundColor: 'rgb(163, 120, 42)' }} variant="contained"><a style={{ textDecoration: 'none', color: 'inherit' }} href="#contact">Entre em contato</a></Button>
             </ul>
           </div>
 
@@ -210,9 +211,10 @@ export default function PersistentDrawerLeft() {
         </List>
       </Drawer>
 
-      <Main open={open}>
+      <Main open={open} style={{ padding: 0 }}>
         <DrawerHeader />
-        <div>Conteudo aqui</div>
+        {/* <div>Conteudo aqui</div> */}
+        <HomePageComponent />
       </Main>
 
     </Box>

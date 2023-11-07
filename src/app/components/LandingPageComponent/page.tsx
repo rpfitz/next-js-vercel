@@ -60,6 +60,9 @@ export default function LandingPageComponent() {
     <div className={styles.landingPageComponent}>
 
       <div className={styles.menuComponent}>
+      <div className={styles.menuLogoComponent}>
+        <p>Dra. Valéria Siqueira</p>
+      </div>
         <ul className={styles.menuItemsList}>
           <a className={styles.menuItem} href="#home"><li>Início</li></a>
           <a className={styles.menuItem} href="#about"><li>Sobre</li></a>

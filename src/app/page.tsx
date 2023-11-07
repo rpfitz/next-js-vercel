@@ -6,9 +6,9 @@ import LandingPageComponent from './components/LandingPageComponent/page'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <LandingPageComponent />
+      {/* <LandingPageComponent /> */}
       {/* <HeaderComponent /> */}
-      {/* <PersistentDrawerLeft /> */}
+      <PersistentDrawerLeft />
     </main>
   )
 }

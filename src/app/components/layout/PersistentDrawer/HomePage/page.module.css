@@ -1,0 +1,231 @@
+.landingPageComponent {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuComponent {
+  background-color: rgba(25, 103, 219);
+  position: sticky;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+}
+
+.menuLogoComponent {
+  margin-left: 1em;
+}
+
+.menuLogoComponent p {
+  color: white;
+}
+
+.menuItemsList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  margin-right: 1em;
+}
+
+.menuItemsList :hover {
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.menuItem {
+  text-decoration: inherit;
+  color: white;
+  font-weight: bold;
+}
+
+.pageComponent {
+  /* margin-top: 3em; */
+}
+
+.homePageComponent {
+  display: flex;
+
+  /* background-image: url('/sala-comum-turva.jpg'); */
+  background-size: cover;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* opacity: 0; */
+  padding: 2em;
+}
+
+.homePageSessionOneComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin: 0 3em;
+  width: 50%;
+}
+
+.homePageSessionTwoComponent {
+  /* background-image: url('/VALPH.jpg'); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+
+  /* max-width: 100%; */
+  /* min-width: 1000px; */
+  height: 50vh;
+  /* width: 100%; */
+
+  width: 50%;
+  padding: 1em;
+  /* padding: -20em; */
+  /* margin: 5em; */
+}
+
+.homePageSessionOneButtonsComponent {
+  display: flex;
+  gap: 1em;
+}
+
+.homePageSessionOneButtonsComponent button {
+  width: 220px;
+  height: 40px;
+  font-weight: bold;
+  background-color: rgb(163, 120, 42);
+  border: none;
+}
+
+.homePageSessionOneButtonsComponent button a {
+  text-decoration: inherit;
+  color: white;
+}
+
+.aboutPageComponent {
+  margin: 1em;
+}
+
+.aboutPageSessionOneComponent {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.aboutPageSessionOneComponent button {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(163, 120, 42);
+  border: none;
+}
+
+.aboutPageSessionOneComponent button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.faqPageComponent {
+  margin: 1em;
+}
+
+.faqPageSessionOneComponent {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqPageSessionOneComponent h1 {
+  margin-top: 0.5em;
+}
+
+.faqListComponent {
+  margin-top: 1em;
+}
+
+.contactPageComponent {
+  margin: 1em;
+}
+
+.contactPageSessionOneComponent {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contactPageSessionOneComponent h1 {
+  margin-top: 0.25em;
+}
+
+.contactFlexSessionComponent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.contactFlexSessionOneComponent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 49%;
+}
+
+.contactFlexSessionTwoComponent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 49%;
+}
+
+.footerComponent {
+  background-color: rgba(25, 103, 219);
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 1em;
+}
+
+/* Remova a margem superior das seções com links de âncora */
+#home,
+#about,
+#faq,
+#contact {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .homePageSessionTwoComponent {
+    display: none;
+  }
+
+  .homePageSessionOneComponent {
+    width: 100%;
+  }
+
+  .homePageSessionOneButtonsComponent {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactFlexSessionOneComponent {
+    width: 100%;
+  }
+
+  .contactFlexSessionOneComponent,
+  .contactFlexSessionTwoComponent {
+    width: 100%;
+  }
+
+  .contactPageSessionOneComponent,
+  .faqPageSessionOneComponent
+
+  /* .aboutPageSessionOneComponent, */
+  /* .homePageSessionOneComponent { */
+    {
+    align-items: center;
+    justify-content: center;
+  }
+}

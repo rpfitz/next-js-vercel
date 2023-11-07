@@ -6,6 +6,16 @@
   display: none;
 }
 
+
+
+
+.TentandoOne {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 800px) {
   .menuItems {
     display: none;
@@ -14,5 +24,6 @@
   .menuHambIcon {
     display: block;
   }
+  
+  
 }
-
