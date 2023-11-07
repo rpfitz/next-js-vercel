@@ -53,12 +53,13 @@ const duvidasFrequentes = [
 export default function Headerzin() {
   return (
     <div className={styles.headerzin}>
+      
       <div className={styles.menuZin}>
         <ul className={styles.menuItemsList}>
           <a style={{ textDecoration: 'inherit', color: 'white' }} href="#home"><li>Início</li></a>
           <a style={{ textDecoration: 'inherit', color: 'white' }} href="#about"><li>Sobre</li></a>
-          <a style={{ textDecoration: 'inherit', color: 'white' }} href="#contact"><li>Contato</li></a>
           <a style={{ textDecoration: 'inherit', color: 'white' }} href="#faq"><li>FAQ</li></a>
+          <a style={{ textDecoration: 'inherit', color: 'white' }} href="#contact"><li>Contato</li></a>
           {/* <Button className={styles.headerComponentRightSideButton} style={{ alignSelf: 'right' }} variant="contained">Marcar consulta</Button> */}
         </ul>
       </div>
@@ -68,15 +69,14 @@ export default function Headerzin() {
       <div className={styles.pageContent}>
         <div id="home" style={{
           display: 'flex',
-          border: '1px solid black',
+          // border: '1px solid black',
         }}>
-          <div style={{
+          <div className={styles.apresentacaoDoutor} style={{
             display: 'flex',
             flexDirection: 'column',
-            width: '60%',
             justifyContent: 'center',
             gap: '1em',
-            border: '1px solid black',
+            // border: '1px solid black',
             margin: '1em'
           }}>
             <h4>Obtenha Atendimento Médico Rápido</h4>
@@ -93,8 +93,8 @@ export default function Headerzin() {
               }}><a style={{ textDecoration: 'inherit', color: 'black' }} href="#contact">Entre em Contato</a></button>
             </div>
           </div>
-          <div style={{
-            border: '1px solid black',
+          <div className={styles.fotoDoutor} style={{
+            // border: '1px solid black',
             margin: '1em',
             width: '40%',
             maxWidth: '100%',
@@ -105,9 +105,9 @@ export default function Headerzin() {
 
         <div id="about" style={{
           margin: '1em',
-          border: '1px solid black',
+          // border: '1px solid black',
         }}>
-          <div style={{
+          <div className={styles.aboutContainer} style={{
             display: 'flex',
             flexDirection: 'column',
             gap: '1em',
@@ -124,15 +124,15 @@ export default function Headerzin() {
           </div>
         </div>
 
-        <div id="faq" style={{
+        <div  style={{
           margin: '1em',
-          border: '1px solid black',
+          // border: '1px solid black',
         }}>
-          <div style={{
+          <div className={styles.faqContainer} style={{
             display: 'flex',
             flexDirection: 'column',
           }}>
-            <h1>Dúvidas Frequentes (FAQ)</h1>
+            <h1 id="faq">Dúvidas Frequentes (FAQ)</h1>
 
             <div style={{ marginTop: '1em' }}>
               {duvidasFrequentes.map((caso: any, index: any) => {
@@ -157,39 +157,81 @@ export default function Headerzin() {
 
         <div id="contact" style={{
           margin: '1em',
-          border: '1px solid black',
+          // border: '1px solid black',
         }}>
 
-          <div style={{
+          <div className={styles.contatoContainer} style={{
             display: 'flex',
             flexDirection: 'column',
             gap: '1em',
           }}>
             <h1>Contato</h1>
 
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1em' }}>
 
-              <div style={{
-                border: '1px solid black',
-                width: '50%',
+              <div className={styles.informacoesContato} style={{
+                // border: '1px solid black',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.5em',
+                minWidth: '50%',
               }}>
                 <h3>Endereço</h3>
-                <p>Avenida Orosimbo Maia, 360 - 6º andar - Vila Itapura, Campinas, SP</p>
+                <p>The Square - Av. Dr. Antônio Gomes de Barros, 625 - Sala 712 - Jatiúca, Maceió - AL, 57036-001</p>
 
                 <h3>Telefone</h3>
-                <p>(19) 4042-2680</p>
+                <p>(82) 98724-1343</p>
 
                 <h3>Email</h3>
-                <p>contato@drandressdelben.com.br</p>
+                <p>contato@dravaleriasiqueira.com.br</p>
               </div>
 
-              <div style={{
-                border: '1px solid black',
+              <div className={styles.horarioFuncionamento} style={{
                 width: '50%',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.5em',
+                minWidth: '50%',
               }}>
-
-
-
+                <h3>Horário de funcionamento</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Segunda-feira</td>
+                      <td>08:00–18:00</td>
+                    </tr>
+                    <tr>
+                      <td>Terça-feira</td>
+                      <td>08:00–18:00</td>
+                    </tr>
+                    <tr>
+                      <td>Quarta-feira</td>
+                      <td>08:00–18:00</td>
+                    </tr>
+                    <tr>
+                      <td>Quinta-feira</td>
+                      <td>08:00–18:00</td>
+                    </tr>
+                    <tr>
+                      <td>Sexta-feira</td>
+                      <td>08:00–18:00</td>
+                    </tr>
+                    <tr>
+                      <td>Sábado</td>
+                      <td>08:00–13:00</td>
+                    </tr>
+                    <tr>
+                      <td>Domingo</td>
+                      <td>Fechado</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
             </div>
