@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Button from '@mui/material/Button';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -50,68 +49,37 @@ const duvidasFrequentes = [
   },
 ]
 
-export default function Headerzin() {
+export default function LandingPageComponent() {
   return (
-    <div className={styles.headerzin}>
+    <div className={styles.landingPageComponent}>
 
-      <div className={styles.menuZin}>
+      <div className={styles.menuComponent}>
         <ul className={styles.menuItemsList}>
-          <a style={{ textDecoration: 'inherit', color: 'white' }} href="#home"><li>Início</li></a>
-          <a style={{ textDecoration: 'inherit', color: 'white' }} href="#about"><li>Sobre</li></a>
-          <a style={{ textDecoration: 'inherit', color: 'white' }} href="#faq"><li>FAQ</li></a>
-          <a style={{ textDecoration: 'inherit', color: 'white' }} href="#contact"><li>Contato</li></a>
-          {/* <Button className={styles.headerComponentRightSideButton} style={{ alignSelf: 'right' }} variant="contained">Marcar consulta</Button> */}
+          <a className={styles.menuItem} href="#home"><li>Início</li></a>
+          <a className={styles.menuItem} href="#about"><li>Sobre</li></a>
+          <a className={styles.menuItem} href="#faq"><li>FAQ</li></a>
+          <a className={styles.menuItem} href="#contact"><li>Contato</li></a>
         </ul>
       </div>
 
-      <div style={{ width: '100%', height: '2em' }}></div>
-
-      <div className={styles.pageContent}>
-        <div id="home" style={{
-          display: 'flex',
-          // border: '1px solid black',
-        }}>
-          <div className={styles.apresentacaoDoutor} style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            gap: '1em',
-            // border: '1px solid black',
-            margin: '1em'
-          }}>
+      <div className={styles.pageComponent}>
+        <div id="home" className={styles.homePageComponent}>
+          <div className={styles.homePageSessionOneComponent}>
             <h4>Obtenha Atendimento Médico Rápido</h4>
             <h1>Serviços Médicos de Alta Qualidade</h1>
             <p>Com 30 anos de experiência e uma paixão pela Medicina Integrativa, estou aqui para ajudá-lo a alcançar a saúde e o bem-estar que você merece. Adote uma abordagem integrativa e funcional para a sua saúde, garantindo um estilo de vida e longevidade saudável. Nunca mais deixe que preocupações com a sua saúde limitem as suas oportunidades.</p>
-            <div style={{ display: 'flex', gap: '1em' }}>
-              <button style={{
-                width: 180,
-                height: 40
-              }}>Agende sua Consulta</button>
-              <button style={{
-                width: 180,
-                height: 40
-              }}><a style={{ textDecoration: 'inherit', color: 'black' }} href="#contact">Entre em Contato</a></button>
+            <div className={styles.homePageSessionOneButtonsComponent}>
+              <button>Agende sua Consulta</button>
+              <button><a href="#contact">Entre em Contato</a></button>
             </div>
           </div>
-          <div className={styles.fotoDoutor} style={{
-            // border: '1px solid black',
-            margin: '1em',
-            width: '40%',
-            maxWidth: '100%',
-          }}>
-            <Image src={'/VALPH.jpg'} alt={'doctor'} width={300} height={600} style={{ maxWidth: '100%', height: '50vh' }} />
+          <div className={styles.homePageSessionTwoComponent}>
+            <Image src={'/VALPH.jpg'} alt={'Dra. Valéria Siqueira'} width={300} height={600} style={{ maxWidth: '100%', height: '50vh' }} />
           </div>
         </div>
 
-        <div id="about" style={{
-          margin: '1em',
-          // border: '1px solid black',
-        }}>
-          <div className={styles.aboutContainer} style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '1em',
-          }}>
+        <div id="about" className={styles.aboutPageComponent}>
+          <div className={styles.aboutPageSessionOneComponent}>
             <p>Sobre mim</p>
             <h1>Dra. Valéria Siqueira</h1>
             <p><strong>CRMAL 3369 RQE 1560</strong></p>
@@ -120,21 +88,14 @@ export default function Headerzin() {
             <p>Experiência em A, com ênfase em B, habilitação em C em D e E</p>
             <p>Atuo também em F (g e h j)</p>
             <p>Amplo conhecimento em G com trabalhos publicados em H e em I.</p>
-            <button style={{ width: 100, height: 40 }}>Saiba mais</button>
+            <button>Saiba mais</button>
           </div>
         </div>
 
-        <div  style={{
-          margin: '1em',
-          // border: '1px solid black',
-        }}>
-          <div className={styles.faqContainer} style={{
-            display: 'flex',
-            flexDirection: 'column',
-          }}>
-            <h1  style={{marginTop: '0.5em'}} id="faq">Dúvidas Frequentes (FAQ)</h1>
-
-            <div style={{ marginTop: '1em' }}>
+        <div id="faq" className={styles.faqPageComponent}>
+          <div className={styles.faqPageSessionOneComponent}>
+            <h1>Dúvidas Frequentes (FAQ)</h1>
+            <div className={styles.faqListComponent}>
               {duvidasFrequentes.map((caso: any, index: any) => {
                 return (
                   <Accordion key={index} style={{ margin: '0.5em 0', backgroundColor: 'rgb(246, 247, 248)' }}>
@@ -155,41 +116,19 @@ export default function Headerzin() {
           </div>
         </div>
 
-        <div id="contact" style={{
-          margin: '1em',
-          // border: '1px solid black',
-        }}>
-
-          <div className={styles.contatoContainer} style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '1em',
-          }}>
-            <h1 style={{marginTop: '0.25em'}}>Contato</h1>
-
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1em' }}>
-
-              <div className={styles.informacoesContato} style={{
-                // border: '1px solid black',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '0.5em',
-              }}>
+        <div id="contact" className={styles.contactPageComponent}>
+          <div className={styles.contactPageSessionOneComponent}>
+            <h1>Contato</h1>
+            <div className={styles.contactFlexSessionComponent}>
+              <div className={styles.contactFlexSessionOneComponent}>
                 <h3>Endereço</h3>
                 <p>The Square - Av. Dr. Antônio Gomes de Barros, 625 - Sala 712 - Jatiúca, Maceió - AL, 57036-001</p>
-
                 <h3>Telefone</h3>
                 <p>(82) 98724-1343</p>
-
                 <h3>Email</h3>
                 <p>contato@dravaleriasiqueira.com.br</p>
               </div>
-
-              <div className={styles.horarioFuncionamento} style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '0.5em',
-              }}>
+              <div className={styles.contactFlexSessionTwoComponent}>
                 <h3>Horário de funcionamento</h3>
                 <table>
                   <thead>
@@ -230,14 +169,13 @@ export default function Headerzin() {
                   </tbody>
                 </table>
               </div>
-
             </div>
           </div>
-
         </div>
+
       </div>
 
-      <div className={styles.footerZ}></div>
+      <div className={styles.footerComponent}></div>
     </div>
   )
 }
