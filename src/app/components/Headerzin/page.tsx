@@ -53,7 +53,7 @@ const duvidasFrequentes = [
 export default function Headerzin() {
   return (
     <div className={styles.headerzin}>
-      
+
       <div className={styles.menuZin}>
         <ul className={styles.menuItemsList}>
           <a style={{ textDecoration: 'inherit', color: 'white' }} href="#home"><li>Início</li></a>
@@ -132,7 +132,7 @@ export default function Headerzin() {
             display: 'flex',
             flexDirection: 'column',
           }}>
-            <h1 id="faq">Dúvidas Frequentes (FAQ)</h1>
+            <h1  style={{marginTop: '0.5em'}} id="faq">Dúvidas Frequentes (FAQ)</h1>
 
             <div style={{ marginTop: '1em' }}>
               {duvidasFrequentes.map((caso: any, index: any) => {
@@ -165,7 +165,7 @@ export default function Headerzin() {
             flexDirection: 'column',
             gap: '1em',
           }}>
-            <h1>Contato</h1>
+            <h1 style={{marginTop: '0.25em'}}>Contato</h1>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1em' }}>
 
@@ -174,7 +174,6 @@ export default function Headerzin() {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '0.5em',
-                minWidth: '50%',
               }}>
                 <h3>Endereço</h3>
                 <p>The Square - Av. Dr. Antônio Gomes de Barros, 625 - Sala 712 - Jatiúca, Maceió - AL, 57036-001</p>
@@ -187,11 +186,9 @@ export default function Headerzin() {
               </div>
 
               <div className={styles.horarioFuncionamento} style={{
-                width: '50%',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '0.5em',
-                minWidth: '50%',
               }}>
                 <h3>Horário de funcionamento</h3>
                 <table>

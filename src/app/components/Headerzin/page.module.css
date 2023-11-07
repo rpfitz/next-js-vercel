@@ -52,8 +52,13 @@
   width: 60%;
 }
 
-.informacoesContato {
-  width: 50%;
+.fotoDoutor {
+  width: 40%;
+}
+
+
+.informacoesContato, .horarioFuncionamento {
+  width: 49%;
 }
 
 
@@ -67,6 +72,10 @@
   }
 
   .informacoesContato {
+    width: 100%;
+  }
+
+  .informacoesContato, .horarioFuncionamento {
     width: 100%;
   }
 
