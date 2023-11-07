@@ -5,6 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Button from '@mui/material/Button';
 
 const duvidasFrequentes = [
   {
@@ -62,6 +63,8 @@ export default function LandingPageComponent() {
         </ul>
       </div>
 
+      <div style={{ marginTop: '3em' }}></div>
+
       <div className={styles.pageComponent}>
         <div id="home" className={styles.homePageComponent}>
           <div className={styles.homePageSessionOneComponent}>
@@ -69,8 +72,8 @@ export default function LandingPageComponent() {
             <h1>Serviços Médicos de Alta Qualidade</h1>
             <p>Com 30 anos de experiência e uma paixão pela Medicina Integrativa, estou aqui para ajudá-lo a alcançar a saúde e o bem-estar que você merece. Adote uma abordagem integrativa e funcional para a sua saúde, garantindo um estilo de vida e longevidade saudável. Nunca mais deixe que preocupações com a sua saúde limitem as suas oportunidades.</p>
             <div className={styles.homePageSessionOneButtonsComponent}>
-              <button>Agende sua Consulta</button>
-              <button><a href="#contact">Entre em Contato</a></button>
+              <Button variant="contained"><a href="#contact">Agende sua Consulta</a></Button>
+              <Button variant="contained"><a href="#contact">Entre em Contato</a></Button>
             </div>
           </div>
           <div className={styles.homePageSessionTwoComponent}>
@@ -80,8 +83,8 @@ export default function LandingPageComponent() {
 
         <div id="about" className={styles.aboutPageComponent}>
           <div className={styles.aboutPageSessionOneComponent}>
-            <p>Sobre mim</p>
-            <h1>Dra. Valéria Siqueira</h1>
+            <h1>Sobre mim</h1>
+            <h2>Dra. Valéria Siqueira</h2>
             <p><strong>CRMAL 3369 RQE 1560</strong></p>
             <p><strong>Abordagem Integrativa/funcional</strong></p>
             <p><strong>Estilo de vida e longevidade saudável .</strong></p>
