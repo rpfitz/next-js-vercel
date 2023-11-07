@@ -6,6 +6,11 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Button from '@mui/material/Button';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Face } from '@mui/icons-material';
 
 const duvidasFrequentes = [
   {
@@ -63,8 +68,6 @@ export default function LandingPageComponent() {
         </ul>
       </div>
 
-      <div style={{ marginTop: '3em' }}></div>
-
       <div className={styles.pageComponent}>
         <div id="home" className={styles.homePageComponent}>
           <div className={styles.homePageSessionOneComponent}>
@@ -91,7 +94,7 @@ export default function LandingPageComponent() {
             <p>Experiência em A, com ênfase em B, habilitação em C em D e E</p>
             <p>Atuo também em F (g e h j)</p>
             <p>Amplo conhecimento em G com trabalhos publicados em H e em I.</p>
-            <button>Saiba mais</button>
+            <Button variant="contained"><a href="#contact">Saiba mais</a></Button>
           </div>
         </div>
 
@@ -119,7 +122,7 @@ export default function LandingPageComponent() {
           </div>
         </div>
 
-        <div id="contact" className={styles.contactPageComponent}>
+        {/* <div id="contact" className={styles.contactPageComponent}>
           <div className={styles.contactPageSessionOneComponent}>
             <h1>Contato</h1>
             <div className={styles.contactFlexSessionComponent}>
@@ -174,11 +177,71 @@ export default function LandingPageComponent() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </div>
 
-      <div className={styles.footerComponent}></div>
+      <div className={styles.footerComponent}>
+
+        <div className={styles.contactFlexSessionComponent}>
+          <div className={styles.contactFlexSessionOneComponent}>
+            <h3>Endereço</h3>
+            <p>The Square - Av. Dr. Antônio Gomes de Barros, 625 - Sala 712 - Jatiúca, Maceió - AL, 57036-001</p>
+            <h3>Telefone</h3>
+            <p>(82) 98724-1343</p>
+            <h3>Email</h3>
+            <p>contato@dravaleriasiqueira.com.br</p>
+          </div>
+          <div className={styles.contactFlexSessionTwoComponent}>
+            <h3>Horário de funcionamento</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Segunda-feira</td>
+                  <td>08:00–18:00</td>
+                </tr>
+                <tr>
+                  <td>Terça-feira</td>
+                  <td>08:00–18:00</td>
+                </tr>
+                <tr>
+                  <td>Quarta-feira</td>
+                  <td>08:00–18:00</td>
+                </tr>
+                <tr>
+                  <td>Quinta-feira</td>
+                  <td>08:00–18:00</td>
+                </tr>
+                <tr>
+                  <td>Sexta-feira</td>
+                  <td>08:00–18:00</td>
+                </tr>
+                <tr>
+                  <td>Sábado</td>
+                  <td>08:00–13:00</td>
+                </tr>
+                <tr>
+                  <td>Domingo</td>
+                  <td>Fechado</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div style={{ marginTop: '2em' }}>
+          <InstagramIcon />
+          <FacebookIcon />
+          <WhatsAppIcon />
+          <LinkedInIcon />
+        </div>
+      </div>
     </div>
   )
 }
