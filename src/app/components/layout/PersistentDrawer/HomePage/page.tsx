@@ -55,7 +55,7 @@ export default function HomePageComponent() {
   return (
     <div className={styles.pageComponent} style={{}}>
 
-      <div id="home" className={styles.homePageComponent}>
+      <div id="home" className={styles.homePageComponent} style={{ marginBottom: '1em' }}>
         <div className={styles.homePageSessionOneComponent}>
           <div className={styles.tryTheBest}>
             <Typography className={styles.homePageSessionOneComponentHahahaha} style={{ lineHeight: '0.5em' }} variant="h2" gutterBottom  >Tenha Uma</Typography>
@@ -76,7 +76,7 @@ export default function HomePageComponent() {
         </div>
       </div>
 
-      <div id="about" className={styles.aboutPageComponent}>
+      <div id="about" className={styles.aboutPageComponent} style={{ marginTop: '1em' }}>
         <div className={styles.aboutPageSessionOneComponent}>
           <h1>Sobre mim</h1>
           <h2>Dra. Valéria Siqueira</h2>
