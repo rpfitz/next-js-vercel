@@ -113,7 +113,7 @@
   font-weight: bold;
   /* background-color: rgb(163, 120, 42); */
   background-color: rgb(223, 178, 66);
-  
+
   border: none;
   color: white;
   margin: 2em 0;
@@ -238,7 +238,7 @@
     margin-top: 1.5rem;
   }
 
-  .tryTheBest h2{
+  .tryTheBest h2 {
     margin: 1rem;
     padding: 0;
     /* background-color: green; */

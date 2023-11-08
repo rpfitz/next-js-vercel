@@ -58,13 +58,12 @@ export default function HomePageComponent() {
       <div id="home" className={styles.homePageComponent}>
         <div className={styles.homePageSessionOneComponent}>
           <div className={styles.tryTheBest}>
-            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{lineHeight: '0.5em'}} variant="h2" gutterBottom  >Tenha Uma</Typography>
-            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{  }}variant="h2" gutterBottom><strong>Consulta de Qualidade</strong></Typography>
-            {/* <Typography variant="h2" gutterBottom><strong>Dra Valéria Siqueira</strong></Typography> */}
+            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{ lineHeight: '0.5em' }} variant="h2" gutterBottom  >Tenha Uma</Typography>
+            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{}} variant="h2" gutterBottom><strong>Consulta de Qualidade</strong></Typography>
           </div>
 
           <Typography variant="body1" gutterBottom style={{ fontSize: '1.5em' }}>
-            Sou Dra Valéria Siqueira, especialista em médica clínica com uma abordagem centrada no estilo de vida saudável.
+            Sou Dra Valéria Siqueira, médica clínica com uma abordagem centrada no estilo de vida saudável.
             Quero te ajudar a alcançar o seu melhor estado de saúde, prevenindo e tratando doenças, enquanto priorizamos seu bem-estar e qualidade de vida.
           </Typography>
 
