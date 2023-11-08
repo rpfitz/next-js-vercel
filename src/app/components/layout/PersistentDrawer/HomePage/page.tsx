@@ -57,9 +57,9 @@ export default function HomePageComponent() {
 
       <div id="home" className={styles.homePageComponent}>
         <div className={styles.homePageSessionOneComponent}>
-          <div >
-            <Typography style={{lineHeight: '0.5em'}} variant="h2" gutterBottom  >Tenha Uma</Typography>
-            <Typography style={{  }}variant="h2" gutterBottom><strong>Consulta de Qualidade</strong></Typography>
+          <div className={styles.tryTheBest}>
+            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{lineHeight: '0.5em'}} variant="h2" gutterBottom  >Tenha Uma</Typography>
+            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{  }}variant="h2" gutterBottom><strong>Consulta de Qualidade</strong></Typography>
             {/* <Typography variant="h2" gutterBottom><strong>Dra Valéria Siqueira</strong></Typography> */}
           </div>
 

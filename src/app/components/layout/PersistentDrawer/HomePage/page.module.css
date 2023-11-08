@@ -61,6 +61,7 @@
   /* padding: 2em; */
   height: 65vh;
   margin-top: 3em;
+  font-size: 90%;
 }
 
 .homePageSessionOneComponent {
@@ -221,6 +222,33 @@
   .homePageComponent {
     padding: 2em;
     margin: 0;
+    font-size: 80%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tryTheBest {
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+    line-height: 1em;
+  }
+
+  .tryTheBest h2{
+    margin: 1rem;
+    padding: 0;
+    /* background-color: green; */
+    line-height: 1.5em;
+    font-size: 3em;
+  }
+
+  .homePageSessionOneComponentHahahaha {
+    font-size: 4em;
+    /* margin-top: 1em; */
+    line-height: 0.8em;
   }
 
   .homePageSessionTwoComponent {
