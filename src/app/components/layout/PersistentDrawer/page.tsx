@@ -19,7 +19,6 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
 
@@ -90,14 +89,18 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    // page_containerBox__DOVkZ MuiBox-root css-0
+    <Box className={styles.containerBox}>
       <CssBaseline />
 
-      <AppBar style={{
-        backgroundColor: 'white',
-        color: 'black',
-      }} position="fixed" open={open}>
-        <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
+      {/* MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-ap9q21-MuiPaper-root-MuiAppBar-root */}
+      <AppBar
+        sx={{ boxShadow: 'none' }}
+        style={{
+          backgroundColor: '#f9faff',
+          color: 'black',
+        }} position="fixed" open={open}>
+        <Toolbar className={styles.AppBar}>
 
           <div className={styles.TentandoOne}>
             <IconButton
@@ -106,29 +109,37 @@ export default function PersistentDrawerLeft() {
               onClick={handleDrawerOpen}
               edge="start"
               className={styles.menuHambIcon}
-              sx={{ mr: 2, ...(open && { display: 'none' }) }}
+            // sx={{ mr: 2, ...(open && { display: 'none' }) }}
             >
               <MenuIcon />
             </IconButton>
 
             {/* <Typography noWrap component="div" style={{ fontStyle: 'bold', fontSize: '1.2em'}}>Dra Valéria Siqueira</Typography> */}
-            <Image src={'/logovaleriasiqueira.png'} alt={'Dra. Valéria Siqueira'} width={180} height={35} />
+            <Image
+              className={styles.TentandoOneLogo}
+              src={'/logovaleriasiqueira.png'}
+              alt={'Dra. Valéria Siqueira'}
+              quality={100}
+              width={1800} height={1000}
+            />
 
           </div>
 
           <div className={styles.menuItems}>
-            <ul style={{ display: 'flex', gap: '2em', listStyle: 'none', fontWeight: 'bold', alignItems: 'center', justifyContent: 'center' }}>
-              <li>Início</li>
-              <li>Sobre</li>
-              <li>Serviços</li>
-              <li>Contato</li>
-              <Button style={{ height: 35, width: '15em', backgroundColor: 'rgb(163, 120, 42)' }} variant="contained"><a style={{ textDecoration: 'none', color: 'inherit' }} href="#contact">Entre em contato</a></Button>
+            <ul style={{ display: 'flex', gap: '2em', listStyle: 'none', alignItems: 'center', justifyContent: 'center', fontSize: '1.5em' }}>
+              <li><Typography variant="h6" gutterBottom>Início</Typography></li>
+              <li><Typography variant="h6" gutterBottom>Sobre</Typography></li>
+              <li><Typography variant="h6" gutterBottom>Serviços</Typography></li>
+              <li><Button style={{ height: 40, width: '10em', backgroundColor: 'rgb(223, 178, 66)', textTransform: 'none' }} variant="contained">
+                <a style={{ textDecoration: 'none', color: 'inherit', fontSize: '1.5em' }} href="#contact">Contato</a>
+              </Button></li>
             </ul>
           </div>
 
         </Toolbar>
       </AppBar>
 
+      {/* MuiDrawer-root MuiDrawer-docked css-1f2xuhi-MuiDrawer-docked */}
       <Drawer
         sx={{
           width: drawerWidth,
@@ -211,9 +222,9 @@ export default function PersistentDrawerLeft() {
         </List>
       </Drawer>
 
-      <Main open={open} style={{ padding: 0 }}>
+      {/* css-yfo96e */}
+      <Main className={styles.mainZao} open={open}>
         <DrawerHeader />
-        {/* <div>Conteudo aqui</div> */}
         <HomePageComponent />
       </Main>
 

@@ -5,9 +5,10 @@ import LandingPageComponent from './components/LandingPageComponent/page'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+  <main className={styles.main} style={{ backgroundColor: '#f9faff'}}>
       {/* <LandingPageComponent /> */}
       {/* <HeaderComponent /> */}
+
       <PersistentDrawerLeft />
     </main>
   )
