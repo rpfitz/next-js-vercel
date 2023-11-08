@@ -47,7 +47,7 @@
 .pageComponent {
   /* margin-top: 3em; */
   margin: 0;
-  padding: 0;
+  padding: 0 5em;
 }
 
 .homePageComponent {
@@ -221,6 +221,7 @@
 }
 
 @media screen and (max-width: 800px) {
+
   .homePageComponent {
     padding: 2em;
     margin: 0;
@@ -230,6 +231,39 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+    /* Adiciona posição relativa ao container */
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/valphll1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+  }
+
+  .homePageComponent::before {
+    content: '';
+    /* Cria um pseudo-elemento para a imagem de fundo */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/valphll1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    opacity: 0.5;
+    /* Define a opacidade desejada (ajuste conforme necessário) */
+    z-index: -1;
+    /* Coloca o pseudo-elemento atrás do conteúdo */
+  }
+
+  .homePageSessionOneButtonsComponent button a {
+    /* color: black; */
+  }
+
+  .homePageSessionOneComponentHahahaha2 {
+    display: none;
   }
 
   .tryTheBest {
@@ -262,11 +296,14 @@
     width: 100%;
   }
 
+
   .homePageSessionOneButtonsComponent {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
+
+
 
   .contactFlexSessionOneComponent {
     width: 100%;
@@ -285,5 +322,12 @@
     {
     align-items: center;
     justify-content: center;
+  }
+
+
+  .pageComponent {
+    /* margin-top: 3em; */
+    margin: 0;
+    padding: 0;
   }
 }
