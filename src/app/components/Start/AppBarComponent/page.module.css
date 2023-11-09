@@ -8,7 +8,7 @@
   background-color: #f9faff;
   /* opacity: 0.5; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -16,7 +16,7 @@
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   color: rgb(223, 178, 66);
   /* margin: 0 5rem; */
 }
@@ -58,6 +58,10 @@
 
 
 @media screen and (max-width: 800px) {
+  .TentandoOne {
+    justify-content: space-between;
+  }
+
   .menuHambIcon {
     display: block;
   }

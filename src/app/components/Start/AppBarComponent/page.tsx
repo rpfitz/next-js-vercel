@@ -14,6 +14,7 @@ import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
 
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from 'next/link';
 
 const drawerWidth = 240;
 
@@ -45,34 +46,52 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
       sx={{ boxShadow: 'none' }}
       position="fixed" open={open}>
       <Toolbar className={styles.ToolbarComponent}>
-        <div className={styles.TentandoOne} style={{  }}>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={styles.menuHambIcon}
-            sx={{ mr: 2, ...(open && { display: 'none' }) }}
-          >
-            <MenuIcon className={styles.MenuIcon} style={{ display: open ? 'none' : 'block', height: 35, width: 50 }} />
-          </IconButton>
-          <Image
-            className={styles.TentandoOneLogo}
-            src={'/logovaleriasiqueira.png'}
-            alt={'Dra. Valéria Siqueira'}
-            quality={100}
-            width={1800} height={1000}
-          />
+        <div className={styles.TentandoOne} style={{ justifyContent: open ? 'flex-start' : '' }}>
+          <Link href="#home" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={styles.menuHambIcon}
+              sx={{ mr: 2, ...(open && { display: 'none' }) }}
+            >
+              <MenuIcon className={styles.MenuIcon} style={{ display: open ? 'none' : 'block', height: 35, width: 50 }} />
+            </IconButton>
+          </Link>
+          <Link href="#home" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Image
+              className={styles.TentandoOneLogo}
+              src={'/logovaleriasiqueira.png'}
+              alt={'Dra. Valéria Siqueira'}
+              quality={100}
+              width={1800} height={1000}
+            />
+          </Link>
+
+
         </div>
         <div className={styles.menuItems}>
           <ul className={styles.menuListItems}>
-            <li><Typography variant="h6" gutterBottom>Início</Typography></li>
-            <li><Typography variant="h6" gutterBottom>Sobre</Typography></li>
-            <li><Typography variant="h6" gutterBottom>Dúvidas</Typography></li>
-            <li><Button className={styles.menuItemsButton} variant="contained" href="#contact">Contato</Button></li>
+            <li><Typography variant="h6" gutterBottom><Link href="#home" style={{ textDecoration: 'none', color: 'inherit' }}>Início</Link></Typography></li>
+            <li><Typography variant="h6" gutterBottom><Link href="#about" style={{ textDecoration: 'none', color: 'inherit' }}>Sobre</Link></Typography></li>
+            <li><Typography variant="h6" gutterBottom><Link href="#faq" style={{ textDecoration: 'none', color: 'inherit' }}>Dúvidas</Link></Typography></li>
+            <li style={{
+              backgroundColor: 'rgb(223, 178, 66',
+              width: '130px',
+              textAlign: 'center',
+              borderRadius: '4px',
+              height: '40px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+              <Typography variant="h6" gutterBottom><Link href="#contact" style={{ textDecoration: 'none', color: 'white' }}>Contato</Link></Typography>
+            </li>
+            {/* <li><Button className={styles.menuItemsButton} variant="contained" href="#contact"><Link href="#contact" style={{ textDecoration: 'none', color: 'inherit' }}>Contato</Link></Button></li> */}
           </ul>
         </div>
       </Toolbar>
-    </AppBar>
+    </AppBar >
   )
 }

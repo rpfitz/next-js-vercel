@@ -60,7 +60,7 @@ export default function LayoutComponent({ open, setOpen }: any) {
       <CssBaseline />
       <AppBarComponent open={open} handleDrawerOpen={handleDrawerOpen} />
       <DrawerComponent open={open} handleDrawerClose={handleDrawerClose} />
-      <Main className={styles.mainZao} open={open} style={open ? { opacity: 0.5 } : {}}>
+      <Main id="home" className={styles.mainZao} open={open} style={open ? { opacity: 0.5 } : {}}>
         <DrawerHeader />
         <MainContentComponent />
       </Main>

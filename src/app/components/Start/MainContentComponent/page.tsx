@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Link from 'next/link';
 
 const duvidasFrequentes = [
   {
@@ -41,7 +42,7 @@ export default function MainContentComponent() {
   return (
     <div className={styles.pageComponent} style={{}}>
 
-      <div id="home" className={styles.homePageComponent} style={{ marginBottom: '1em' }}>
+      <div className={styles.homePageComponent} style={{ marginBottom: '1em' }}>
         <div className={styles.homePageSessionOneComponent}>
           <div className={styles.tryTheBest}>
             {/* <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em' }} variant="h2" gutterBottom  >Tenha Uma</Typography> */}
@@ -57,15 +58,15 @@ export default function MainContentComponent() {
           </Typography>
 
           <div className={styles.homePageSessionOneButtonsComponent}>
-            <Button variant="contained"><a href="#contact">Marcar Consulta</a></Button>
+            <Button variant="contained"><Link href="#contact">Marcar Consulta</Link></Button>
           </div>
         </div>
         <div className={styles.homePageSessionTwoComponent} style={{}}>
-          <Image src={'/valphll1.png'} alt={'Dra. Valéria Siqueira'} width={300} height={600} />
+          <Image priority src={'/valphll1.png'} alt={'Dra. Valéria Siqueira'} width={300} height={600} />
         </div>
       </div>
 
-      <div id="home" className={styles.homePageComponentMobile} style={{ marginBottom: '1em' }}>
+      <div id="" className={styles.homePageComponentMobile} style={{ marginBottom: '1em' }}>
         <div className={styles.homePageSessionOneComponent} style={{ marginTop: 0, paddingTop: 0, }}>
           <div className={styles.tryTheBest} style={{ marginTop: 0, paddingTop: 0, }}>
             <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em', fontSize: '2.2em' }} variant="h2" gutterBottom  >Descubra uma vida</Typography>
@@ -79,7 +80,7 @@ export default function MainContentComponent() {
             </Typography>
 
             <div className={styles.homePageSessionOneButtonsComponent}>
-              <Button variant="contained"><a href="#contact">Marcar Consulta</a></Button>
+              <Button variant="contained"><Link href="#contact">Marcar Consulta</Link></Button>
             </div>
           </div>
         </div>
@@ -94,7 +95,7 @@ export default function MainContentComponent() {
           <h1>Sobre mim</h1>
 
 
-          {/* <p>
+          {/* <p> 
             Dra. Valéria Siqueira, médica com 29 anos de experiência, é especialista em Clínica Médica e Medicina Integrativa/Funcional, com residência médica na HUPAA. Graduada pela ECMAL, sua jornada na medicina é enriquecida por uma paixão contínua por aprender coisas novas.</p>
           <p>Sua abordagem inovadora visa proporcionar a cada paciente uma jornada em direção à saúde integral, com foco na longevidade saudável. Inspirando mudanças positivas, compartilha insights valiosos em seu perfil no Instagram, tornando cada consulta uma oportunidade para uma vida mais plena.</p>
           <p>Seja bem-vindo a uma experiência de saúde que vai além do convencional, guiada por uma profissional comprometida com seu bem-estar. Transforme sua jornada de cuidados médicos em uma busca constante por uma vida verdadeiramente saudável e significativa.</p> */}
@@ -105,45 +106,52 @@ export default function MainContentComponent() {
           <p>Sua abordagem à medicina vai além do tratamento convencional, refletindo seu compromisso inabalável com o bem-estar integral. Dra. Valéria é reconhecida por seu estilo de vida dedicado à longevidade saudável, onde aprender constantemente é uma paixão que se reflete em sua prática médica..</p>
 
 
-          <h2>Abordagem</h2>
+          <h2  >Abordagem</h2>
+          <h2 ></h2>
+
           <p >Dra. Valéria se destaca como especialista em Clínica Médica e Medicina Integrativa/Funcional, oferecendo cuidados especializados que consideram não apenas os sintomas, mas a pessoa como um todo. Sua abordagem única resulta em tratamentos personalizados, combinando precisão diagnóstica com uma compreensão profunda das necessidades individuais.</p>
-          <p>A Clínica Médica proporciona diagnósticos certeiros e tratamentos eficazes, enquanto a Medicina Integrativa/Funcional visa abordar as origens dos problemas de saúde, promovendo uma cura completa e duradoura.</p>
+
+          <p >A Clínica Médica proporciona diagnósticos certeiros e tratamentos eficazes, enquanto a Medicina Integrativa/Funcional visa abordar as origens dos problemas de saúde, promovendo uma cura completa e duradoura.</p>
 
           {/* <p><strong>Abordagem Integrativa/funcional</strong></p>
           <p><strong>Estilo de vida e longevidade saudável .</strong></p>
           <p>Experiência em A, com ênfase em B, habilitação em C em D e E</p>
           <p>Atuo também em F (g e h j)</p>
           <p>Amplo conhecimento em G com trabalhos publicados em H e em I.</p> */}
-          <Button variant="contained"><a href="#contact">Saiba mais</a></Button>
+          <Button variant="contained"><Link href="#contact">Saiba mais</Link></Button>
+
         </div>
       </div>
 
       <Divider variant='fullWidth' />
 
-      <div id="faq" className={styles.faqPageComponent}>
-        <div className={styles.faqPageSessionOneComponent}>
-          <h1>Dúvidas Frequentes (FAQ)</h1>
-          <div className={styles.faqListComponent}>
-            {duvidasFrequentes.map((caso: any, index: any) => {
-              return (
-                <Accordion key={index} style={{ margin: '0.5em 0', backgroundColor: '' }}>
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                  >
-                    <Typography>{caso.duvida}</Typography>
-                  </AccordionSummary>
-                  <Divider />
-                  <AccordionDetails style={{ backgroundColor: '#eeeff7' || '#f9faff' }}>
-                    <Typography>{caso.resposta}</Typography>
-                  </AccordionDetails>
-                </Accordion>
-              )
-            })}
+      <div id="faq" style={{ margin: 0, padding: 0 }}>
+        <div className={styles.faqPageComponent}>
+          <div className={styles.faqPageSessionOneComponent}>
+            <h1>Dúvidas Frequentes (FAQ)</h1>
+            <div className={styles.faqListComponent}>
+              {duvidasFrequentes.map((caso: any, index: any) => {
+                return (
+                  <Accordion key={index} style={{ margin: '0.5em 0', backgroundColor: '' }}>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel1a-content"
+                      id="panel1a-header"
+                    >
+                      <Typography>{caso.duvida}</Typography>
+                    </AccordionSummary>
+                    <Divider />
+                    <AccordionDetails style={{ backgroundColor: '#eeeff7' || '#f9faff' }}>
+                      <Typography>{caso.resposta}</Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>
+
 
       <Divider variant='fullWidth' />
     </div>

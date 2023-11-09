@@ -20,6 +20,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Link from 'next/link';
 
 const drawerWidth = 240;
 
@@ -33,7 +34,24 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 
-const menu_list = ['Início', 'Sobre', 'Dúvidas', 'Contato'];
+const menu_list = [
+  {
+    name: 'Início',
+    path: '#home',
+  },
+  {
+    name: 'Sobre',
+    path: '#about',
+  },
+  {
+    name: 'Dúvidas',
+    path: '#faq',
+  },
+  {
+    name: 'Contato',
+    path: '#contact',
+  },
+]
 
 export default function DrawerComponent({ open, handleDrawerClose }: any) {
   const theme = useTheme();
@@ -62,20 +80,27 @@ export default function DrawerComponent({ open, handleDrawerClose }: any) {
         <List>
           {menu_list.map((item: any) => {
             return (
-              <ListItem key={item} disablePadding>
-                <ListItemButton >
-                  <ListItemText className={styles.ListItemText} primary={item} />
-                </ListItemButton>
-              </ListItem>
+              <>
+                <ListItem key={item.name} disablePadding>
+                  <Link href={item.path} style={{ textDecoration: 'none', }} onClick={handleDrawerClose}>
+                    <ListItemButton >
+                      <ListItemText className={styles.ListItemText} primary={item.name}>
+                      </ListItemText>
+                    </ListItemButton>
+                  </Link>
+
+                </ListItem>
+                <Divider light />
+              </>
             )
           })}
         </List>
         <Divider />
         <div className={styles.socialMenuIcons}>
-          <div className={styles.menuIcons}><InstagramIcon /></div>
-          <div className={styles.menuIcons}><FacebookIcon /></div>
-          <div className={styles.menuIcons}><WhatsAppIcon /></div>
-          <div className={styles.menuIcons}><LinkedInIcon /></div>
+          <div className={styles.menuIcons}><InstagramIcon className={styles.menuIcon} /></div>
+          <div className={styles.menuIcons}><FacebookIcon className={styles.menuIcon} /></div>
+          <div className={styles.menuIcons}><WhatsAppIcon className={styles.menuIcon} /></div>
+          <div className={styles.menuIcons}><LinkedInIcon  className={styles.menuIcon} /></div>
         </div>
       </div>
     </Drawer>
