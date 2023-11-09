@@ -86,9 +86,9 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 const menu_list = ['Início', 'Sobre', 'Dúvidas', 'Contato'];
 
 
-export default function PersistentDrawerLeft() {
+export default function PersistentDrawerLeft({ open, setOpen }: any) {
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  // const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
