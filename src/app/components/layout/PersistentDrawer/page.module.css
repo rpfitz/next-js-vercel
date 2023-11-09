@@ -10,7 +10,7 @@
 
 .ToolbarComponent {
   padding: 1em 6rem;
-  background-color: rgb(244, 247, 246);
+  background-color: #f9faff;
   /* opacity: 0.5; */
   display: flex;
   justify-content: center;
