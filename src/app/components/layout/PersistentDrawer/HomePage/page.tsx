@@ -11,6 +11,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
+
 const googleMapsAddress = "https://www.google.com/maps/dir//The+Square+-+Av.+Dr.+Ant%C3%B4nio+Gomes+de+Barros,+625+-+Sala+712+-+Jati%C3%BAca,+Macei%C3%B3+-+AL,+57036-001/@-9.6517957,-35.7893749,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x701454f102c4643:0x284f509b97d4ec4f!2m2!1d-35.706973!2d-9.6518055?entry=ttu"
 
 const duvidasFrequentes = [
@@ -135,7 +136,8 @@ export default function HomePageComponent() {
                   >
                     <Typography>{caso.duvida}</Typography>
                   </AccordionSummary>
-                  <AccordionDetails style={{ backgroundColor: 'white' || '#f9faff' }}>
+                  <Divider />
+                  <AccordionDetails style={{ backgroundColor: '#eeeff7' || '#f9faff' }}>
                     <Typography>{caso.resposta}</Typography>
                   </AccordionDetails>
                 </Accordion>
