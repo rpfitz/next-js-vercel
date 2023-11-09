@@ -1,31 +1,31 @@
 "use client"
 
 import * as React from 'react';
+
+import styles from './page.module.css'
+import HomePageComponent from './HomePage/page';
+
+import Image from 'next/image';
+
 import { styled, useTheme } from '@mui/material/styles';
+import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
+
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
+import Button from '@mui/material/Button';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import Button from '@mui/material/Button';
-import Image from 'next/image';
-
-import styles from './page.module.css'
-import HomePageComponent from './HomePage/page';
-
-
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -82,6 +82,10 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-end',
 }));
 
+
+const menu_list = ['Início', 'Sobre', 'Dúvidas', 'Contato'];
+
+
 export default function PersistentDrawerLeft() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -95,19 +99,13 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
-    // page_containerBox__DOVkZ MuiBox-root css-0
     <Box className={styles.containerBox}>
       <CssBaseline />
-
-      {/* MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-ap9q21-MuiPaper-root-MuiAppBar-root */}
       <AppBar
+        className={styles.AppBarZero}
         sx={{ boxShadow: 'none' }}
-        style={{
-          backgroundColor: '#f9faff',
-          color: 'black',
-        }} position="fixed" open={open}>
-        <Toolbar className={styles.AppBar}>
-
+        position="fixed" open={open}>
+        <Toolbar className={styles.ToolbarComponent}>
           <div className={styles.TentandoOne}>
             <IconButton
               color="inherit"
@@ -119,8 +117,6 @@ export default function PersistentDrawerLeft() {
             >
               <MenuIcon style={{ display: open ? 'none' : 'block' }} />
             </IconButton>
-
-            {/* <Typography noWrap component="div" style={{ fontStyle: 'bold', fontSize: '1.2em'}}>Dra Valéria Siqueira</Typography> */}
             <Image
               className={styles.TentandoOneLogo}
               src={'/logovaleriasiqueira.png'}
@@ -128,24 +124,17 @@ export default function PersistentDrawerLeft() {
               quality={100}
               width={1800} height={1000}
             />
-
           </div>
-
           <div className={styles.menuItems}>
-            <ul style={{ display: 'flex', gap: '2em', listStyle: 'none', alignItems: 'center', justifyContent: 'center', fontSize: '1.5em' }}>
+            <ul className={styles.menuListItems}>
               <li><Typography variant="h6" gutterBottom>Início</Typography></li>
               <li><Typography variant="h6" gutterBottom>Sobre</Typography></li>
-              <li><Typography variant="h6" gutterBottom>Serviços</Typography></li>
-              <li><Button style={{ height: 40, width: '10em', backgroundColor: '#f9faff', textTransform: 'none' }} variant="contained">
-                <a style={{ textDecoration: 'none', color: 'inherit', fontSize: '1.5em' }} href="#contact">Contato</a>
-              </Button></li>
+              <li><Typography variant="h6" gutterBottom>Dúvidas</Typography></li>
+              <li><Button className={styles.menuItemsButton} variant="contained" href="#contact">Contato</Button></li>
             </ul>
           </div>
-
         </Toolbar>
       </AppBar>
-
-      {/* MuiDrawer-root MuiDrawer-docked css-1f2xuhi-MuiDrawer-docked */}
       <Drawer
         sx={{
           width: drawerWidth,
@@ -159,95 +148,37 @@ export default function PersistentDrawerLeft() {
         anchor="left"
         open={open}
       >
-        <DrawerHeader style={{ backgroundColor: '#2b2b2c', }}>
-          <IconButton onClick={handleDrawerClose} style={{ color: '#f9faff'}}>
+        <DrawerHeader className={styles.DrawerHeader}>
+          <IconButton className={styles.DrawerHeaderIconButton} onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </DrawerHeader>
         <Divider />
-
-        <div style={{
-          backgroundColor: '#2b2b2c',
-          width: '100%',
-          height: '100%',
-        }}>
-          <List style={{ color: '#f9faff', }}>
-            <ListItem key={'Início'} disablePadding>
-              <ListItemButton>
-                <ListItemIcon >
-                  <InboxIcon style={{ color: '#f9faff', }} />
-                </ListItemIcon>
-                <ListItemText primary={'Início'} />
-              </ListItemButton>
-            </ListItem>
-
-            <ListItem key={'Sobre'} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <InboxIcon style={{ color: '#f9faff', }} />
-                </ListItemIcon>
-                <ListItemText primary={'Sobre'} />
-              </ListItemButton>
-            </ListItem>
-
-            <ListItem key={'Serviços'} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <InboxIcon style={{ color: '#f9faff', }} />
-                </ListItemIcon>
-                <ListItemText primary={'Serviços'} />
-              </ListItemButton>
-            </ListItem>
-
-            <ListItem key={'Contato'} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <InboxIcon style={{ color: '#f9faff', }} />
-                </ListItemIcon>
-                <ListItemText primary={'Contato'} />
-              </ListItemButton>
-            </ListItem>
-
+        <div className={styles.menuContent}>
+          <List>
+            {menu_list.map((item: any) => {
+              return (
+                <ListItem key={item} disablePadding>
+                  <ListItemButton >
+                    <ListItemText className={styles.ListItemText} primary={item} />
+                  </ListItemButton>
+                </ListItem>
+              )
+            })}
           </List>
-
-          <Divider light={true} />
-          <Divider light={true} />
-          <Divider light={true} />
-          <Divider light={true} />
-        <Divider />
-
-
-          <div className={styles.contactFlexSessionTwoComponent} style={{
-            display: 'flex',
-            gap: '1em',
-            justifyContent: 'center',
-            width: '100%',
-            marginTop: '1em',
-            color: '#f9faff',
-          }}>
-            <div style={{ display: 'flex', gap: '0.5em' }}>
-              <InstagramIcon />
-            </div>
-            <div style={{ display: 'flex', gap: '0.5em' }}>
-              <FacebookIcon />
-            </div>
-            <div style={{ display: 'flex', gap: '0.5em' }}>
-              <WhatsAppIcon />
-            </div>
-            <div style={{ display: 'flex', gap: '0.5em' }}>
-              <LinkedInIcon />
-            </div>
+          <Divider />
+          <div className={styles.socialMenuIcons}>
+            <div className={styles.menuIcons}><InstagramIcon /></div>
+            <div className={styles.menuIcons}><FacebookIcon /></div>
+            <div className={styles.menuIcons}><WhatsAppIcon /></div>
+            <div className={styles.menuIcons}><LinkedInIcon /></div>
           </div>
         </div>
-
       </Drawer>
-
-      {/* css-yfo96e */}
       <Main className={styles.mainZao} open={open}>
         <DrawerHeader />
         <HomePageComponent />
       </Main>
-
-    </Box>
+    </Box >
   );
 }
