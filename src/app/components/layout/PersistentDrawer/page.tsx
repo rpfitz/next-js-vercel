@@ -25,6 +25,12 @@ import Image from 'next/image';
 import styles from './page.module.css'
 import HomePageComponent from './HomePage/page';
 
+
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 const drawerWidth = 240;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
@@ -109,9 +115,9 @@ export default function PersistentDrawerLeft() {
               onClick={handleDrawerOpen}
               edge="start"
               className={styles.menuHambIcon}
-            // sx={{ mr: 2, ...(open && { display: 'none' }) }}
+              sx={{ mr: 2, ...(open && { display: 'none' }) }}
             >
-              <MenuIcon />
+              <MenuIcon style={{ display: open ? 'none' : 'block' }} />
             </IconButton>
 
             {/* <Typography noWrap component="div" style={{ fontStyle: 'bold', fontSize: '1.2em'}}>Dra Valéria Siqueira</Typography> */}
@@ -130,7 +136,7 @@ export default function PersistentDrawerLeft() {
               <li><Typography variant="h6" gutterBottom>Início</Typography></li>
               <li><Typography variant="h6" gutterBottom>Sobre</Typography></li>
               <li><Typography variant="h6" gutterBottom>Serviços</Typography></li>
-              <li><Button style={{ height: 40, width: '10em', backgroundColor: 'rgb(223, 178, 66)', textTransform: 'none' }} variant="contained">
+              <li><Button style={{ height: 40, width: '10em', backgroundColor: '#f9faff', textTransform: 'none' }} variant="contained">
                 <a style={{ textDecoration: 'none', color: 'inherit', fontSize: '1.5em' }} href="#contact">Contato</a>
               </Button></li>
             </ul>
@@ -153,73 +159,87 @@ export default function PersistentDrawerLeft() {
         anchor="left"
         open={open}
       >
-        <DrawerHeader>
+        <DrawerHeader style={{ backgroundColor: '#2b2b2c', }}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
-          <ListItem key={'Início'} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary={'Início'} />
-            </ListItemButton>
-          </ListItem>
 
-          <ListItem key={'Sobre'} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary={'Sobre'} />
-            </ListItemButton>
-          </ListItem>
+        <div style={{
+          backgroundColor: '#2b2b2c',
+          width: '100%',
+          height: '100%',
+        }}>
+          <List style={{ color: '#f9faff', }}>
+            <ListItem key={'Início'} disablePadding>
+              <ListItemButton>
+                <ListItemIcon >
+                  <InboxIcon style={{ color: '#f9faff', }} />
+                </ListItemIcon>
+                <ListItemText primary={'Início'} />
+              </ListItemButton>
+            </ListItem>
 
-          <ListItem key={'Serviços'} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary={'Serviços'} />
-            </ListItemButton>
-          </ListItem>
+            <ListItem key={'Sobre'} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <InboxIcon style={{ color: '#f9faff', }} />
+                </ListItemIcon>
+                <ListItemText primary={'Sobre'} />
+              </ListItemButton>
+            </ListItem>
 
-          <ListItem key={'Contato'} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary={'Contato'} />
-            </ListItemButton>
-          </ListItem>
+            <ListItem key={'Serviços'} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <InboxIcon style={{ color: '#f9faff', }} />
+                </ListItemIcon>
+                <ListItemText primary={'Serviços'} />
+              </ListItemButton>
+            </ListItem>
 
-        </List>
+            <ListItem key={'Contato'} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <InboxIcon style={{ color: '#f9faff', }} />
+                </ListItemIcon>
+                <ListItemText primary={'Contato'} />
+              </ListItemButton>
+            </ListItem>
 
+          </List>
+
+          <Divider light={true} />
+          <Divider light={true} />
+          <Divider light={true} />
+          <Divider light={true} />
         <Divider />
-        <List>
 
-          <ListItem key={'Instagram'} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary={'Instagram'} />
-            </ListItemButton>
-          </ListItem>
 
-          <ListItem key={'Facebook'} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <InboxIcon />
-              </ListItemIcon>
-              <ListItemText primary={'Facebook'} />
-            </ListItemButton>
-          </ListItem>
+          <div className={styles.contactFlexSessionTwoComponent} style={{
+            display: 'flex',
+            gap: '1em',
+            justifyContent: 'center',
+            width: '100%',
+            marginTop: '1em',
+            color: '#f9faff',
+          }}>
+            <div style={{ display: 'flex', gap: '0.5em' }}>
+              <InstagramIcon />
+            </div>
+            <div style={{ display: 'flex', gap: '0.5em' }}>
+              <FacebookIcon />
+            </div>
+            <div style={{ display: 'flex', gap: '0.5em' }}>
+              <WhatsAppIcon />
+            </div>
+            <div style={{ display: 'flex', gap: '0.5em' }}>
+              <LinkedInIcon />
+            </div>
+          </div>
+        </div>
 
-        </List>
       </Drawer>
 
       {/* css-yfo96e */}
