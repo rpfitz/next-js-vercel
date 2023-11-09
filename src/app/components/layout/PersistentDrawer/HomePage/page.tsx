@@ -93,6 +93,8 @@ export default function HomePageComponent() {
         </div>
       </div>
 
+      <Divider variant='fullWidth' />
+
       <div id="faq" className={styles.faqPageComponent}>
         <div className={styles.faqPageSessionOneComponent}>
           <h1>Dúvidas Frequentes (FAQ)</h1>
@@ -116,6 +118,9 @@ export default function HomePageComponent() {
           </div>
         </div>
       </div>
+
+      <Divider variant='fullWidth' />
+
 
       {/* <div id="contact" className={styles.contactPageComponent}>
         <div className={styles.contactPageSessionOneComponent}>

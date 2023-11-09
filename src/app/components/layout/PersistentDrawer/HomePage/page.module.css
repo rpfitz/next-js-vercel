@@ -128,8 +128,7 @@
 }
 
 .aboutPageComponent {
-  margin: 1em;
-  margin-top: 1em;
+  margin: 2em 0;
 }
 
 .aboutPageSessionOneComponent {
@@ -139,7 +138,7 @@
 }
 
 .aboutPageSessionOneComponent button {
-  width: 120px;
+  width: 140px;
   height: 40px;
   /* background-color: rgb(163, 120, 42); */
   background-color: rgb(223, 178, 66);
@@ -153,7 +152,8 @@
 }
 
 .faqPageComponent {
-  margin: 1em;
+  margin: 2em 0;
+
 }
 
 .faqPageSessionOneComponent {
