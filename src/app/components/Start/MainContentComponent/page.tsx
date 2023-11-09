@@ -68,12 +68,12 @@ export default function MainContentComponent() {
       <div id="home" className={styles.homePageComponentMobile} style={{ marginBottom: '1em' }}>
         <div className={styles.homePageSessionOneComponent} style={{ marginTop: 0, paddingTop: 0, }}>
           <div className={styles.tryTheBest} style={{ marginTop: 0, paddingTop: 0, }}>
-            <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em', fontSize: '3em' }} variant="h2" gutterBottom  >Descubra uma vida</Typography>
-            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{ lineHeight: '2em', fontSize: '3em' }} variant="h2" gutterBottom><strong>Mais saúdavel hoje</strong></Typography>
+            <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em', fontSize: '2.2em' }} variant="h2" gutterBottom  >Descubra uma vida</Typography>
+            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{ lineHeight: '2em', fontSize: '2.3em' }} variant="h2" gutterBottom><strong>Mais saúdavel hoje</strong></Typography>
           </div>
           <Image src={'/valphill1cortada.png'} alt={'Dra. Valéria Siqueira'} width={300} height={600} />
           <div>
-            <Typography variant="body1" gutterBottom style={{ fontSize: '1.5em' }}>
+            <Typography variant="body1" gutterBottom style={{ fontSize: '1.3em' }}>
               <span className={styles.textinResponsivo}>Sou Dra Valéria Siqueira, médica clínica com uma abordagem centrada no estilo de vida saudável. Quero te ajudar a alcançar o seu melhor estado de saúde, prevenindo e tratando doenças, enquanto priorizamos seu bem-estar e qualidade de vida.</span>
 
             </Typography>
