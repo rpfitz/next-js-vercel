@@ -80,18 +80,15 @@ export default function DrawerComponent({ open, handleDrawerClose }: any) {
         <List>
           {menu_list.map((item: any) => {
             return (
-              <>
-                <ListItem key={item.name} disablePadding>
-                  <Link href={item.path} style={{ textDecoration: 'none', }} onClick={handleDrawerClose}>
-                    <ListItemButton >
-                      <ListItemText className={styles.ListItemText} primary={item.name}>
-                      </ListItemText>
-                    </ListItemButton>
-                  </Link>
+              <ListItem key={item.name} disablePadding>
+                <Link href={item.path} style={{ textDecoration: 'none', }} onClick={handleDrawerClose}>
+                  <ListItemButton >
+                    <ListItemText className={styles.ListItemText} primary={item.name}>
+                    </ListItemText>
+                  </ListItemButton>
+                </Link>
 
-                </ListItem>
-                <Divider light />
-              </>
+              </ListItem>
             )
           })}
         </List>
@@ -100,7 +97,7 @@ export default function DrawerComponent({ open, handleDrawerClose }: any) {
           <div className={styles.menuIcons}><InstagramIcon className={styles.menuIcon} /></div>
           <div className={styles.menuIcons}><FacebookIcon className={styles.menuIcon} /></div>
           <div className={styles.menuIcons}><WhatsAppIcon className={styles.menuIcon} /></div>
-          <div className={styles.menuIcons}><LinkedInIcon  className={styles.menuIcon} /></div>
+          <div className={styles.menuIcons}><LinkedInIcon className={styles.menuIcon} /></div>
         </div>
       </div>
     </Drawer>
