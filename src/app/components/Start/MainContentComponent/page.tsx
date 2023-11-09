@@ -44,8 +44,11 @@ export default function MainContentComponent() {
       <div id="home" className={styles.homePageComponent} style={{ marginBottom: '1em' }}>
         <div className={styles.homePageSessionOneComponent}>
           <div className={styles.tryTheBest}>
-            <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em' }} variant="h2" gutterBottom  >Tenha Uma</Typography>
-            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{}} variant="h2" gutterBottom><strong>Consulta de Qualidade</strong></Typography>
+            {/* <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em' }} variant="h2" gutterBottom  >Tenha Uma</Typography> */}
+            {/* <Typography className={styles.homePageSessionOneComponentHahahaha} style={{}} variant="h2" gutterBottom><strong>Consulta de Qualidade</strong></Typography> */}
+
+            <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.8em' }} variant="h2" gutterBottom  >Descubra uma vida</Typography>
+            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{}} variant="h2" gutterBottom><strong>Mais saúdavel hoje</strong></Typography>
           </div>
 
           <Typography variant="body1" gutterBottom style={{ fontSize: '1.5em' }}>
@@ -65,14 +68,14 @@ export default function MainContentComponent() {
       <div id="home" className={styles.homePageComponentMobile} style={{ marginBottom: '1em' }}>
         <div className={styles.homePageSessionOneComponent} style={{ marginTop: 0, paddingTop: 0, }}>
           <div className={styles.tryTheBest} style={{ marginTop: 0, paddingTop: 0, }}>
-            <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em', marginTop: 0, paddingTop: 0, }} variant="h2" gutterBottom  >Tenha Uma</Typography>
-            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{ marginTop: 0, paddingTop: 0, }} variant="h2" gutterBottom><strong>Consulta de Qualidade</strong></Typography>
+            <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em', fontSize: '3em' }} variant="h2" gutterBottom  >Descubra uma vida</Typography>
+            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{ lineHeight: '2em', fontSize: '3em' }} variant="h2" gutterBottom><strong>Mais saúdavel hoje</strong></Typography>
           </div>
           <Image src={'/valphill1cortada.png'} alt={'Dra. Valéria Siqueira'} width={300} height={600} />
           <div>
             <Typography variant="body1" gutterBottom style={{ fontSize: '1.5em' }}>
-              <span className={styles.textinResponsivo}>Sou Dra Valéria Siqueira, médica clínica com uma abordagem centrada no estilo de vida saudável.</span>
-              Quero te ajudar a alcançar o seu melhor estado de saúde, prevenindo e tratando doenças, enquanto priorizamos seu bem-estar e qualidade de vida.
+              <span className={styles.textinResponsivo}>Sou Dra Valéria Siqueira, médica clínica com uma abordagem centrada no estilo de vida saudável. Quero te ajudar a alcançar o seu melhor estado de saúde, prevenindo e tratando doenças, enquanto priorizamos seu bem-estar e qualidade de vida.</span>
+
             </Typography>
 
             <div className={styles.homePageSessionOneButtonsComponent}>
@@ -103,7 +106,7 @@ export default function MainContentComponent() {
 
 
           <h2>Abordagem</h2>
-          <p>Dra. Valéria se destaca como especialista em Clínica Médica e Medicina Integrativa/Funcional, oferecendo cuidados especializados que consideram não apenas os sintomas, mas a pessoa como um todo. Sua abordagem única resulta em tratamentos personalizados, combinando precisão diagnóstica com uma compreensão profunda das necessidades individuais.</p>
+          <p >Dra. Valéria se destaca como especialista em Clínica Médica e Medicina Integrativa/Funcional, oferecendo cuidados especializados que consideram não apenas os sintomas, mas a pessoa como um todo. Sua abordagem única resulta em tratamentos personalizados, combinando precisão diagnóstica com uma compreensão profunda das necessidades individuais.</p>
           <p>A Clínica Médica proporciona diagnósticos certeiros e tratamentos eficazes, enquanto a Medicina Integrativa/Funcional visa abordar as origens dos problemas de saúde, promovendo uma cura completa e duradoura.</p>
 
           {/* <p><strong>Abordagem Integrativa/funcional</strong></p>
