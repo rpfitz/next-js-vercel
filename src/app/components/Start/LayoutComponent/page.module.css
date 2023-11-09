@@ -1,0 +1,8 @@
+.containerBox {
+  display: flex;
+  background-color: #f9faff;
+}
+
+.mainZao {}
+
+@media screen and (max-width: 800px) {}
