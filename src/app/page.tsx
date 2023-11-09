@@ -22,7 +22,8 @@ export default function Home() {
         width: '100%',
         backgroundColor: '#2b2b2c',
         height: '100%',
-        display: 'flex', gap: '3em', alignItems: 'center', flexWrap: 'wrap'
+        display: 'flex', gap: '3em', alignItems: 'center', flexWrap: 'wrap',
+        zIndex: 99999,
       }}>
         <div className={styles.contactFlexSessionOneComponent} style={{ display: 'flex', gap: '1em', flexDirection: 'column', }}>
           <div className={styles.poxaZero}>

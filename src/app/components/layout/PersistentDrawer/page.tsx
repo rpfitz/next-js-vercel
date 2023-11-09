@@ -160,7 +160,7 @@ export default function PersistentDrawerLeft() {
         open={open}
       >
         <DrawerHeader style={{ backgroundColor: '#2b2b2c', }}>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={handleDrawerClose} style={{ color: '#f9faff'}}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </DrawerHeader>
