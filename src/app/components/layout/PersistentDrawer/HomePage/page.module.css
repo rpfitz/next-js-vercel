@@ -323,7 +323,25 @@
   }
 
   .homePageSessionOneComponentHahahaha2 {
-    display: none;
+    /* display: none; */
+    /* font-size: 0em; */
+  }
+
+  .tryTheBest h2:first-child {
+    /* display: none; */
+    font-size: 2em;
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+  }
+
+  .tryTheBest h2:nth-child(2) {
+    /* display: none; */
+    font-size: 2em;
+    line-height: 2em;
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
   }
 
   .tryTheBest {
