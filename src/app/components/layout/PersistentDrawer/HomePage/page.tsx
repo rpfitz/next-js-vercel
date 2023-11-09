@@ -87,7 +87,7 @@ export default function HomePageComponent() {
             <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em', marginTop: 0, paddingTop: 0, }} variant="h2" gutterBottom  >Tenha Uma</Typography>
             <Typography className={styles.homePageSessionOneComponentHahahaha} style={{ marginTop: 0, paddingTop: 0, }} variant="h2" gutterBottom><strong>Consulta de Qualidade</strong></Typography>
           </div>
-          <Image src={'/valphll1.png'} alt={'Dra. Valéria Siqueira'} width={300} height={600} />
+          <Image src={'/valphill1cortada.png'} alt={'Dra. Valéria Siqueira'} width={300} height={600} />
           <div>
           <Typography variant="body1" gutterBottom style={{ fontSize: '1.5em' }}>
             <span className={styles.textinResponsivo}>Sou Dra Valéria Siqueira, médica clínica com uma abordagem centrada no estilo de vida saudável.</span>
