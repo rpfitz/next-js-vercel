@@ -175,7 +175,7 @@ export default function PersistentDrawerLeft({ open, setOpen }: any) {
           </div>
         </div>
       </Drawer>
-      <Main className={styles.mainZao} open={open}>
+      <Main className={styles.mainZao} open={open} style={open ? { opacity: 0.5 } : {}}>
         <DrawerHeader />
         <HomePageComponent />
       </Main>

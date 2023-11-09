@@ -22,11 +22,11 @@ export default function Home() {
       {/* <LandingPageComponent /> */}
       {/* <HeaderComponent /> */}
 
-      <PersistentDrawerLeft open={open} setOpen={setOpen} />
+      <PersistentDrawerLeft open={open} setOpen={setOpen}  />
 
       <Divider />
 
-      <div className={styles.footerComponent} style={open ? { margin: '0 15em', maxWidth: '30%' } : {}}>
+      <div className={styles.footerComponent} style={open ? { margin: '0 15em', maxWidth: '30%', opacity: 0.8 } : {}}>
         <div className={styles.footerSessionOneComponent}>
           <div><h3>Endereço</h3><p><a className={styles.footerAnchorItemOne} href={googleMapsAddress}>The Square - Av. Dr. Antônio Gomes de Barros, 625 - Sala 712 - Jatiúca, Maceió - AL, 57036-001</a></p></div>
           <div><h3>Telefone</h3><p><a className={styles.footerAnchorItemOne} href="">(82) 98724-1343</a></p></div>
