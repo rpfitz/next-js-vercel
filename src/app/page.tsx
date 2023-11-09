@@ -21,11 +21,11 @@ export default function Home() {
 
       <Divider />
 
-      {/* <div className={styles.footerComponent}>
+      <div className={styles.footerComponent} style={{marginLeft: '2em', width: '90%'}}>
         <div className={styles.footerSessionOneComponent}>
           <div><h3>Endereço</h3><p><a className={styles.footerAnchorItemOne} href={googleMapsAddress}>The Square - Av. Dr. Antônio Gomes de Barros, 625 - Sala 712 - Jatiúca, Maceió - AL, 57036-001</a></p></div>
           <div><h3>Telefone</h3><p><a className={styles.footerAnchorItemOne} href="">(82) 98724-1343</a></p></div>
-          <div><h3>Email</h3><p><a className={styles.footerAnchorItemOne} href="">contato@dravaleriasiqueira.com.br</a></p></div> */}
+          <div><h3>Email</h3><p><a className={styles.footerAnchorItemOne} href="">contato@dravaleriasiqueira.com.br</a></p></div>
 
 
           {/* <div>
@@ -43,8 +43,8 @@ export default function Home() {
             </div>
           </div> */}
 
-          
-        {/* </div>
+
+        </div>
 
         <div className={styles.footerSessionTwoComponent}>
           <h3>Redes Sociais</h3>
@@ -60,7 +60,7 @@ export default function Home() {
           <div><p><a className={styles.footerAnchorItemOne} href="#">Dúvidas</a></p></div>
           <div><p><a className={styles.footerAnchorItemOne} href="#">Contato</a></p></div>
         </div>
-      </div> */}
+      </div>
 
     </main>
   )
