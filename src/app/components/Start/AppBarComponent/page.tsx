@@ -54,9 +54,10 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
               onClick={handleDrawerOpen}
               edge="start"
               className={styles.menuHambIcon}
+              style={{ ...(open && { display: 'none' }) }}
               sx={{ mr: 2, ...(open && { display: 'none' }) }}
             >
-              <MenuIcon className={styles.MenuIcon} style={{ display: open ? 'none' : 'block', height: 35, width: 50 }} />
+              <MenuIcon className={styles.MenuIcon} style={{ height: 35, width: 50 }} />
             </IconButton>
           </Link>
           <Link href="#home" style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -77,7 +78,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
             <li><Typography variant="h6" gutterBottom><Link href="#about" style={{ textDecoration: 'none', color: 'inherit' }}>Sobre</Link></Typography></li>
             <li><Typography variant="h6" gutterBottom><Link href="#faq" style={{ textDecoration: 'none', color: 'inherit' }}>Dúvidas</Link></Typography></li>
             <li style={{
-              backgroundColor: 'rgb(223, 178, 66',
+              backgroundColor: 'rgb(223, 178, 66)',
               width: '130px',
               textAlign: 'center',
               borderRadius: '4px',
