@@ -1,8 +1,21 @@
 .main {
   margin: 0;
   /* padding: 0 6em; */
+  /* background-color: #2b2b2c; */
   background-color: #f9faff;
-  /* font-family: 'Raleway', sans-serif */
-  /* font-family: 'Lato', sans-serif; */
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kay+Pho+Du:wght@600&family=Lato&family=Nunito+Sans:opsz@6..12&family=Raleway:wght@100;500;600;700&family=Roboto&display=swap');
+
+
+.contactPageComponent {
+  color: white;
+  padding: 3em 6em;
+}
+
+@media screen and (max-width: 800px) {
+  .contactPageComponent {
+    color: white;
+    padding: 2em;
+  }
 }
