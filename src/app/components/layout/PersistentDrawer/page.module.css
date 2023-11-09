@@ -26,7 +26,7 @@
   /* margin: 0 5rem; */
 }
 
-.menuHambIcon {
+.menuHambIcon svg {
   display: none;
 }
 
@@ -102,7 +102,7 @@
     display: none;
   }
 
-  .menuHambIcon {
+  .menuHambIcon svg {
     display: block;
   }
 
