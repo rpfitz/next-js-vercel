@@ -45,7 +45,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
       sx={{ boxShadow: 'none' }}
       position="fixed" open={open}>
       <Toolbar className={styles.ToolbarComponent}>
-        <div className={styles.TentandoOne}>
+        <div className={styles.TentandoOne} style={{  }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"

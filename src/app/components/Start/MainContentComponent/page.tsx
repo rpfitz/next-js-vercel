@@ -89,13 +89,28 @@ export default function MainContentComponent() {
       <div id="about" className={styles.aboutPageComponent} style={{ marginTop: '1em' }}>
         <div className={styles.aboutPageSessionOneComponent}>
           <h1>Sobre mim</h1>
+
+
+          {/* <p>
+            Dra. Valéria Siqueira, médica com 29 anos de experiência, é especialista em Clínica Médica e Medicina Integrativa/Funcional, com residência médica na HUPAA. Graduada pela ECMAL, sua jornada na medicina é enriquecida por uma paixão contínua por aprender coisas novas.</p>
+          <p>Sua abordagem inovadora visa proporcionar a cada paciente uma jornada em direção à saúde integral, com foco na longevidade saudável. Inspirando mudanças positivas, compartilha insights valiosos em seu perfil no Instagram, tornando cada consulta uma oportunidade para uma vida mais plena.</p>
+          <p>Seja bem-vindo a uma experiência de saúde que vai além do convencional, guiada por uma profissional comprometida com seu bem-estar. Transforme sua jornada de cuidados médicos em uma busca constante por uma vida verdadeiramente saudável e significativa.</p> */}
+
           <h2>Dra. Valéria Siqueira</h2>
           <p><strong>CRMAL 3369 RQE 1560</strong></p>
-          <p><strong>Abordagem Integrativa/funcional</strong></p>
+          <p>Dra. Valéria Siqueira, uma médica dedicada com 29 anos de experiência, é uma referência em cuidados médicos personalizados e compassivos. Sua jornada na medicina começou com a graduação pela ECMAL, seguida pela Residência Médica na HUPAA, onde desenvolveu sua em Clínica Médica e Medicina Integrativa/Funcional.</p>
+          <p>Sua abordagem à medicina vai além do tratamento convencional, refletindo seu compromisso inabalável com o bem-estar integral. Dra. Valéria é reconhecida por seu estilo de vida dedicado à longevidade saudável, onde aprender constantemente é uma paixão que se reflete em sua prática médica..</p>
+
+
+          <h2>Abordagem</h2>
+          <p>Dra. Valéria se destaca como especialista em Clínica Médica e Medicina Integrativa/Funcional, oferecendo cuidados especializados que consideram não apenas os sintomas, mas a pessoa como um todo. Sua abordagem única resulta em tratamentos personalizados, combinando precisão diagnóstica com uma compreensão profunda das necessidades individuais.</p>
+          <p>A Clínica Médica proporciona diagnósticos certeiros e tratamentos eficazes, enquanto a Medicina Integrativa/Funcional visa abordar as origens dos problemas de saúde, promovendo uma cura completa e duradoura.</p>
+
+          {/* <p><strong>Abordagem Integrativa/funcional</strong></p>
           <p><strong>Estilo de vida e longevidade saudável .</strong></p>
           <p>Experiência em A, com ênfase em B, habilitação em C em D e E</p>
           <p>Atuo também em F (g e h j)</p>
-          <p>Amplo conhecimento em G com trabalhos publicados em H e em I.</p>
+          <p>Amplo conhecimento em G com trabalhos publicados em H e em I.</p> */}
           <Button variant="contained"><a href="#contact">Saiba mais</a></Button>
         </div>
       </div>
