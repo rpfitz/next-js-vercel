@@ -17,7 +17,7 @@
   display: flex;
   gap: 0;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   z-index: 9999;
 }
 
