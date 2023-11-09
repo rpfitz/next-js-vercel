@@ -115,7 +115,7 @@ export default function PersistentDrawerLeft({ open, setOpen }: any) {
               className={styles.menuHambIcon}
               sx={{ mr: 2, ...(open && { display: 'none' }) }}
             >
-              <MenuIcon style={{ display: open ? 'none' : 'block' }} />
+              <MenuIcon style={{ display: open ? 'none' : 'block', height: 35, width: 50 }} />
             </IconButton>
             <Image
               className={styles.TentandoOneLogo}

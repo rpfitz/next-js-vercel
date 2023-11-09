@@ -4,7 +4,7 @@
 }
 
 .menuComponent {
-  background-color: rgba(25, 103, 219);
+  /* background-color: rgba(25, 103, 219); */
   position: sticky;
   width: 100%;
   height: 3em;
@@ -59,7 +59,7 @@
   /* background-position: center center; */
   /* opacity: 0; */
   /* padding: 2em; */
-  height: 65vh;
+  height: 100%;
   margin-top: 3em;
   font-size: 90%;
   margin-bottom: 5em;
@@ -218,38 +218,95 @@
   padding: 0;
 }
 
-@media screen and (max-width: 800px) {
+.fotoTestando {
+  display: none;
+}
 
+.textinResponsivo {
+  display: block;
+}
+
+
+.homePageComponentMobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
   .homePageComponent {
+    display: none;
+  }
+
+  .homePageComponentMobile {
+    display: block;
+  }
+  .homePageComponentMobile {
+    display: none;
+  }
+
+  .textinResponsivo {
+    display: none;
+  }
+
+  .homePageSessionOneComponentHahahaha2,
+  .homePageSessionOneComponentHahahaha {
+    margin: 0;
+    padding: 0;
+  }
+
+  .homePageSessionOneComponent {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .homePageSessionOneComponent img {
+    height: 300px;
+    margin-bottom: 1em;
+  }
+
+  .tryTheBest {
+    margin: 0;
+    padding: 0;
+  }
+
+  .fotoTestando {
+    display: block;
+    height: 2em;
+  }
+
+  .homePageComponentMobile {
     /* padding: 2em; */
     margin: 0;
+    padding: 0;
     font-size: 80%;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
+    /* position: relative; */
+    flex-wrap: wrap;
     /* Adiciona posição relativa ao container */
 
     /* background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/valphll1.png'); */
-    background-image: linear-gradient(rgba(249, 250, 255, 0.8), rgba(249, 250, 255, 0.8)), url('/valphll1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-image: linear-gradient(rgba(249, 250, 255, 0.8), rgba(249, 250, 255, 0.8)), url('/valphll1.png'); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     /* background-position: center; */
+    /* background-position: right; */
   }
 
-  .homePageComponent::before {
+  .homePageComponentMobile::before {
     content: '';
     /* Cria um pseudo-elemento para a imagem de fundo */
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url('/valphll1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-image: url('/valphll1.png'); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     /* background-position: center; */
     opacity: 0.5;
     /* Define a opacidade desejada (ajuste conforme necessário) */
@@ -289,10 +346,13 @@
 
   .homePageSessionTwoComponent {
     display: none;
+    /* width: 100%; */
   }
 
   .homePageSessionOneComponent {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -330,6 +390,3 @@
     padding: 0;
   }
 }
-
-
-

@@ -81,6 +81,26 @@ export default function HomePageComponent() {
         </div>
       </div>
 
+      <div id="home" className={styles.homePageComponentMobile} style={{ marginBottom: '1em' }}>
+        <div className={styles.homePageSessionOneComponent}>
+          <div className={styles.tryTheBest}>
+            <Typography className={styles.homePageSessionOneComponentHahahaha2} style={{ lineHeight: '0.5em' }} variant="h2" gutterBottom  >Tenha Uma</Typography>
+            <Typography className={styles.homePageSessionOneComponentHahahaha} style={{}} variant="h2" gutterBottom><strong>Consulta de Qualidade</strong></Typography>
+          </div>
+          <Image src={'/valphll1.png'} alt={'Dra. Valéria Siqueira'} width={300} height={600} />
+          <Typography variant="body1" gutterBottom style={{ fontSize: '1.5em' }}>
+            <span className={styles.textinResponsivo}>Sou Dra Valéria Siqueira, médica clínica com uma abordagem centrada no estilo de vida saudável.</span>
+            Quero te ajudar a alcançar o seu melhor estado de saúde, prevenindo e tratando doenças, enquanto priorizamos seu bem-estar e qualidade de vida.
+          </Typography>
+
+          <div className={styles.homePageSessionOneButtonsComponent}>
+            <Button variant="contained"><a href="#contact">Marcar Consulta</a></Button>
+          </div>
+        </div>
+        <div className={styles.homePageSessionTwoComponent} style={{}}>
+        </div>
+      </div>
+
       <Divider variant='fullWidth' />
 
       <div id="about" className={styles.aboutPageComponent} style={{ marginTop: '1em' }}>
@@ -125,7 +145,7 @@ export default function HomePageComponent() {
 
       <Divider variant='fullWidth' />
 
-   
+
 
 
     </div>
