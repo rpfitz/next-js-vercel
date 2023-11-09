@@ -115,7 +115,7 @@ export default function PersistentDrawerLeft({ open, setOpen }: any) {
               className={styles.menuHambIcon}
               sx={{ mr: 2, ...(open && { display: 'none' }) }}
             >
-              <MenuIcon style={{ display: open ? 'none' : 'block', height: 35, width: 50 }} />
+              <MenuIcon className={styles.MenuIcon} style={{ display: open ? 'none' : 'block', height: 35, width: 50 }} />
             </IconButton>
             <Image
               className={styles.TentandoOneLogo}
@@ -150,7 +150,7 @@ export default function PersistentDrawerLeft({ open, setOpen }: any) {
       >
         <DrawerHeader className={styles.DrawerHeader}>
           <IconButton className={styles.DrawerHeaderIconButton} onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            {theme.direction === 'ltr' ? <ChevronLeftIcon className={styles.closeIconButton} /> : <ChevronRightIcon className={styles.closeIconButton} />}
           </IconButton>
         </DrawerHeader>
         <Divider />

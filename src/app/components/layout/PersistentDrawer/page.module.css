@@ -63,8 +63,9 @@
   font-size: 1.5em;
 }
 
-.DrawerHeaderIconButton {
-  color: #f9faff;
+.closeIconButton svg {
+  color: rgb(223, 178, 66);
+
 }
 
 .menuItemsButton {
@@ -97,7 +98,15 @@
 }
 
 
+.menuHambIcon {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
+  .menuHambIcon {
+    display: block;
+  }
+
   .menuItems {
     display: none;
   }
