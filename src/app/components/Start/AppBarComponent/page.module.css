@@ -15,7 +15,7 @@
   display: flex;
   width: 100%;
   align-items: center;
-  color: #9f8958;
+  color: rgb(223, 178, 66);
 }
 
 .menuHambIcon svg {
@@ -47,7 +47,7 @@
 .menuItemsButton {
   height: 40;
   width: 10em;
-  background-color: #9f8958;
+  background-color: rgb(223, 178, 66);
   text-transform: none;
 }
 

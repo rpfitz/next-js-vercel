@@ -68,8 +68,6 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
               width={1800} height={1000}
             />
           </Link>
-
-
         </div>
         <div className={styles.menuItems}>
           <ul className={styles.menuListItems}>
@@ -77,7 +75,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
             <li><Typography variant="h6" gutterBottom><Link href="#about" style={{ textDecoration: 'none', color: 'inherit' }}>Sobre</Link></Typography></li>
             <li><Typography variant="h6" gutterBottom><Link href="#faq" style={{ textDecoration: 'none', color: 'inherit' }}>Dúvidas</Link></Typography></li>
             <li style={{
-              backgroundColor: '#9f8958',
+              backgroundColor: 'rgb(223, 178, 66)',
               width: '130px',
               textAlign: 'center',
               borderRadius: '4px',
