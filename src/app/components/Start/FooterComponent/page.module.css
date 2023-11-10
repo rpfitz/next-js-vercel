@@ -21,7 +21,7 @@
 
 .footerAnchorItemOne {
   text-decoration: none;
-  color: rgb(223, 178, 66);
+  color: #9f8958;
 }
 
 .footerSessionTwoComponent {
@@ -33,7 +33,7 @@
 .socialIconsSpan {
   display: flex;
   gap: 0.5em;
-  color: rgb(223, 178, 66);
+  color: #9f8958;
 }
 
 .footerSessionThreeComponent {

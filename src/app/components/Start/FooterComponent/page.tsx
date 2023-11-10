@@ -18,7 +18,7 @@ export default function FooterComponent({ open }: any) {
         <div><h3>Email</h3><p><a className={styles.footerAnchorItemOne} href="">dra.valeriasiqueira@outlook.com</a></p></div>
         <div>
           <h3>Redes Sociais:</h3>
-          <div className={styles.contactFlexSessionTwoComponent} style={{ display: 'flex', gap: '0.25em', color: 'rgb(223, 178, 66)' }}>
+          <div className={styles.contactFlexSessionTwoComponent} style={{ display: 'flex', gap: '0.25em', color: '#9f8958' }}>
             <div style={{ display: 'flex', gap: '0.5em', }}>
               <Link style={{ color: 'inherit' }} href="https://www.instagram.com/dra.valeriasiqueira/">
                 <InstagramIcon />

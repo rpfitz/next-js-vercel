@@ -11,7 +11,6 @@ import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import Button from '@mui/material/Button';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
@@ -78,7 +77,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
             <li><Typography variant="h6" gutterBottom><Link href="#about" style={{ textDecoration: 'none', color: 'inherit' }}>Sobre</Link></Typography></li>
             <li><Typography variant="h6" gutterBottom><Link href="#faq" style={{ textDecoration: 'none', color: 'inherit' }}>Dúvidas</Link></Typography></li>
             <li style={{
-              backgroundColor: 'rgb(223, 178, 66)',
+              backgroundColor: '#9f8958',
               width: '130px',
               textAlign: 'center',
               borderRadius: '4px',
