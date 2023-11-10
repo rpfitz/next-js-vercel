@@ -1,0 +1,28 @@
+.faqPageComponent {
+  margin: 2em 0;
+}
+
+.faqPageSessionOneComponent {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqPageSessionOneComponent h1 {
+  margin-top: 0.5em;
+}
+
+.faqListComponent {
+  margin-top: 1em;
+}
+
+#faq {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .faqPageSessionOneComponent {
+    align-items: center;
+    justify-content: center;
+  }
+}
