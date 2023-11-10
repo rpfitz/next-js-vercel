@@ -24,11 +24,15 @@
   gap: 1em;
 }
 
+.buttonSession1 button:hover {
+  background-color: rgb(223, 178, 66);
+}
+
 .buttonSession1 button {
   width: 220px;
   height: 60px;
   font-weight: bold;
-  background-color: rgb(223, 178, 66);
+  background-color: #a98955;
   border: none;
   color: white;
   margin: 2em 0;

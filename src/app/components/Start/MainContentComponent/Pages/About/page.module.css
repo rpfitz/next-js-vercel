@@ -13,8 +13,12 @@
   width: 140px;
   height: 40px;
   /* background-color: rgb(163, 120, 42); */
-  background-color: rgb(223, 178, 66);
+  background-color: #a98955;
   border: none;
+}
+
+.aboutPageSessionOneComponent button:hover {
+  background-color: rgb(223, 178, 66);
 }
 
 .aboutPageSessionOneComponent button a {

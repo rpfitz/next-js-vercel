@@ -1,6 +1,3 @@
-
-
-
 export const home = {
   first_header: `Descubra uma vida`,
   second_header: `Mais saúdavel hoje`,
