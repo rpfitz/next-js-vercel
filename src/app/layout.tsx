@@ -20,7 +20,7 @@ export default function RootLayout({
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossOrigin=''/>
       <body className={inter.className}>{children}</body>
     </html>
   )

@@ -32,9 +32,9 @@ export default function Home() {
         zIndex: '1000',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center', 
+        alignItems: 'center',
       }} target="_blank">
-        <i style={{ marginTop: '16' }} className="fa fa-whatsapp"></i>
+        <WhatsAppIcon fontSize='large' />
       </a>
       <LayoutComponent open={open} setOpen={setOpen} />
       <Divider />
