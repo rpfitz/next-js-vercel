@@ -52,7 +52,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
 
   return (
     <AppBar
-      sx={{ boxShadow: 'none' ,}}
+      sx={{ boxShadow: 'none', }}
       position="fixed" open={open} >
       <Toolbar style={{
         ...mediaQueryStyle,
@@ -62,14 +62,14 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
         alignItems: `center`,
       }}>
         <div className={styles.TentandoOne} style={{ justifyContent: open ? 'flex-start' : '' }}>
-          <Link href="#home" style={{ textDecoration: 'none', color: '#a98955' }}>
+          <Link href="#home" style={{ textDecoration: 'none', color: '#a98955', margin: 0, padding: 0, }}>
             <IconButton
               color="inherit"
               aria-label="open drawer"
               onClick={handleDrawerOpen}
               edge="start"
               className={styles.menuHambIcon}
-              style={{ ...(open && { display: 'none' }) }}
+              style={{ ...(open && { display: 'none' }), margin: 0, padding: 0 }}
               sx={{ mr: 2, ...(open && { display: 'none' }) }}
             >
               <MenuIcon className={styles.MenuIcon} style={{ height: 35, width: 50 }} />
