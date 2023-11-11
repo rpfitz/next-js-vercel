@@ -21,7 +21,7 @@
 }
 
 .buttonSession1 button:hover {
-  background-color: #a98955;
+  background-color: #e0bb7f;
 }
 
 .buttonSession1 button {
@@ -38,7 +38,7 @@
   text-decoration: inherit;
   color: white;
   text-transform: none;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .session2 {
@@ -52,8 +52,8 @@
 
 .session2 img {
   max-width: 100%;
-  height: 65vh;
-  width: 70%;
+  height: 50vh;
+  width: 67.5%;
 }
 
 #home {

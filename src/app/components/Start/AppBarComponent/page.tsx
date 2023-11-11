@@ -40,14 +40,19 @@ const AppBar = styled(MuiAppBar, {
 
 export default function AppBarComponent({ open, handleDrawerOpen }: any) {
   const mediaQueryStyle = {
-    '@media screen and (minWidth: 801px)': {
-      margin: "0",
-      padding: `0em 6rem`,
-    },
     '@media screen and (maxWidth: 800px)': {
       margin: "0",
       padding: '0',
     },
+    // '@media screen and (minWidth: 801px)': {
+    //   margin: "0",
+    //   padding: `1em 6em`,
+    // },
+    // '@media screen and (min-width: 600px) and (max-width: 800px)': {
+    //   margin: '0',
+    //   padding: '0',
+    // },
+
   };
 
   return (
@@ -55,11 +60,12 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
       sx={{ boxShadow: 'none', }}
       position="fixed" open={open} >
       <Toolbar style={{
-        ...mediaQueryStyle,
         backgroundColor: `#f9faff`,
-        display: `flex`,
-        justifyContent: `space-between`,
-        alignItems: `center`,
+        ...mediaQueryStyle,
+
+        // display: `flex`,
+        // justifyContent: `space-between`,
+        // alignItems: `center`,
       }}>
         <div className={styles.TentandoOne} style={{ justifyContent: open ? 'flex-start' : '' }}>
           <Link href="#home" style={{ textDecoration: 'none', color: '#a98955', margin: 0, padding: 0, }}>
