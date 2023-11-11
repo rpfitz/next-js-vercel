@@ -39,13 +39,23 @@ const AppBar = styled(MuiAppBar, {
 }));
 
 export default function AppBarComponent({ open, handleDrawerOpen }: any) {
+  const mediaQueryStyle = {
+    '@media screen and (minWidth: 801px)': {
+      margin: "0",
+      padding: `0em 6rem`,
+    },
+    '@media screen and (maxWidth: 800px)': {
+      margin: "0",
+      padding: '0',
+    },
+  };
+
   return (
     <AppBar
-      className={styles.AppBarZero}
-      sx={{ boxShadow: 'none' }}
-      position="fixed" open={open}>
+      sx={{ boxShadow: 'none' ,}}
+      position="fixed" open={open} >
       <Toolbar className={styles.ToolbarComponent} style={{
-        padding: `1em 6rem`,
+        ...mediaQueryStyle,
         backgroundColor: `#f9faff`,
         display: `flex`,
         justifyContent: `space-between`,
