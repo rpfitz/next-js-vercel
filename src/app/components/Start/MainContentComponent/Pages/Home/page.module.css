@@ -15,10 +15,6 @@
   padding-top: 0;
 }
 
-.paragraph1 {
-  font-size: 1.5em;
-}
-
 .buttonSession1 {
   display: flex;
   gap: 1em;
@@ -68,22 +64,6 @@
 @media screen and (max-width: 800px) {
   .container {
     display: none;
-  }
-
-  .header1 {
-    line-height: 0.5em;
-    font-size: 2.2em;
-  }
-
-  .header2 {
-    line-height: 2em;
-    font-size: 2.3em;
-  }
-
-  .header1,
-  .header2 {
-    margin: 0;
-    padding: 0;
   }
 
   .session1 {
