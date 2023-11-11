@@ -80,11 +80,11 @@ export default function DrawerComponent({ open, handleDrawerClose }: any) {
       </DrawerHeader>
       <Divider />
       <div className={styles.menuContent}>
-        <List style={{ }}>
+        <List style={{}}>
           {menu_list.map((item: any) => {
             return (
               <ListItem className={styles.listItemMenuContent} key={item.name} disablePadding>
-                <Link href={item.path} style={{ textDecoration: 'none', }} onClick={handleDrawerClose}>
+                <Link href={item.path} style={{ textDecoration: 'none', width: '100%', }} onClick={handleDrawerClose}>
                   <ListItemButton >
                     <ListItemText className={styles.ListItemText} primary={item.name}>
                     </ListItemText>
