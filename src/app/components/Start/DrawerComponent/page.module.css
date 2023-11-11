@@ -26,11 +26,11 @@
 .ListItemText {
   display: flex;
   justify-content: center;
-  color: #f9faff;
+  color: #e0bb7f;
 }
 
 .ListItemText span {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .socialMenuIcons {
@@ -39,7 +39,7 @@
   justify-content: center;
   width: 100%;
   margin-top: 1em;
-  color: #f9faff;
+  color: #e0bb7f;
   padding: 1em;
 }
 

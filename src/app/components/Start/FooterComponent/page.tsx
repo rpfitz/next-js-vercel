@@ -21,17 +21,11 @@ export default function FooterComponent({ open }: any) {
         <div><h3>Email</h3><p><a className={styles.footerAnchorItemOne} href="mailto:dra.valeriasiqueira@outlook.com">dra.valeriasiqueira@outlook.com</a></p></div>
         <div>
           <h3>Redes Sociais:</h3>
-          <div className={styles.contactFlexSessionTwoComponent} style={{ display: 'flex', gap: '0.25em', color: '#a98955' }}>
+          <div className={styles.contactFlexSessionTwoComponent} style={{ display: 'flex', gap: '0.25em', color: '#e0bb7f' }}>
             <div style={{ display: 'flex', gap: '0.5em', }}>
               <Link style={{ color: 'inherit' }} href="https://www.instagram.com/dra.valeriasiqueira/">
                 <InstagramIcon />
               </Link>
-            </div>
-            <div style={{ display: 'flex', gap: '0.5em' }}>
-              <Link style={{ color: 'inherit' }} href="#">
-                <FacebookIcon />
-              </Link>
-
             </div>
             <div style={{ display: 'flex', gap: '0.5em' }}>
               <Link style={{ color: 'inherit' }} href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}>

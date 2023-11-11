@@ -78,7 +78,8 @@ export default function DrawerComponent({ open, handleDrawerClose }: any) {
           {theme.direction === 'ltr' ? <ChevronLeftIcon className={styles.closeIconButton} /> : <ChevronRightIcon />}
         </IconButton>
       </DrawerHeader>
-      <Divider />
+      <div style={{borderTop: '1px solid #e0bb7f', width: '100%'}}></div>
+
       <div className={styles.menuContent}>
         <List style={{}}>
           {menu_list.map((item: any) => {
@@ -90,22 +91,17 @@ export default function DrawerComponent({ open, handleDrawerClose }: any) {
                     </ListItemText>
                   </ListItemButton>
                 </Link>
-
               </ListItem>
             )
           })}
         </List>
-        <Divider />
+
+        <div style={{borderTop: '1px solid #e0bb7f', width: '100%'}}></div>
+        
         <div className={styles.socialMenuIcons}>
           <div className={styles.menuIcons}>
             <Link style={{ color: 'inherit' }} href={`https://www.instagram.com/dra.valeriasiqueira/`}>
               <InstagramIcon />
-            </Link>
-          </div>
-
-          <div className={styles.menuIcons}>
-            <Link style={{ color: 'inherit' }} href={``}>
-              <FacebookIcon />
             </Link>
           </div>
 
