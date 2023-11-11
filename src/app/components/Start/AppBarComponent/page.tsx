@@ -84,7 +84,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
           <Link href="/" style={{ textDecoration: 'none', color: '#a98955' }}>
             <Image
               className={styles.TentandoOneLogo}
-              src={'/logovaleriasiqueira.png'}
+              src={'/novalogo.png'}
               alt={'Dra. Valéria Siqueira'}
               quality={100}
               width={1800} height={1000}
@@ -93,9 +93,9 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
         </div>
         <div className={styles.menuItems}>
           <ul className={styles.menuListItems}>
-            <li><Typography variant="h6" gutterBottom><Link href="#home" style={{ textDecoration: 'none', color: 'black' }}>Início</Link></Typography></li>
-            <li><Typography variant="h6" gutterBottom><Link href="#about" style={{ textDecoration: 'none', color: 'black' }}>Sobre</Link></Typography></li>
-            <li><Typography variant="h6" gutterBottom><Link href="#faq" style={{ textDecoration: 'none', color: 'black' }}>Dúvidas</Link></Typography></li>
+            <li><Typography variant="h6" gutterBottom><Link href="#home" style={{ textDecoration: 'none', color: 'black', margin: 0, padding: 0, }}>Início</Link></Typography></li>
+            <li><Typography variant="h6" gutterBottom><Link href="#about" style={{ textDecoration: 'none', color: 'black', margin: 0, padding: 0, }}>Sobre</Link></Typography></li>
+            <li><Typography variant="h6" gutterBottom><Link href="#faq" style={{ textDecoration: 'none', color: 'black', margin: 0, padding: 0, }}>Dúvidas</Link></Typography></li>
             <li style={{
               backgroundColor: '#a98955',
               width: '130px',

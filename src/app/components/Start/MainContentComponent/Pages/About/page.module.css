@@ -9,23 +9,26 @@
   gap: 1em;
 }
 
+/**/
 .aboutPageSessionOneComponent button {
+  background-color: #a98955;
+  margin: 1em 0;
   width: 140px;
   height: 40px;
-  /* background-color: rgb(163, 120, 42); */
-  background-color: #a98955;
-  border: none;
 }
 
 .aboutPageSessionOneComponent button:hover {
-  background-color: #a98955;
+  background-color: #e0bb7f;
 }
 
 .aboutPageSessionOneComponent button a {
-  color: #f9faff;
-  text-decoration: none;
-  font-weight: bold;
+  /* background-color: #e0bb7f; */
+
+  text-decoration: inherit;
+  color: white;
+  text-transform: none;
 }
+/**/
 
 #home,
 #about,

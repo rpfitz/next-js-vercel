@@ -21,7 +21,7 @@ export default function AboutPage() {
         <h2>{about.header_about2}</h2>
         <p>{about.paragraph_about2}</p>
         <p>{about.paragraph2_about2}</p>
-        <Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}><Button variant="contained" style={{backgroundColor: '#a98955', }}>{about.button_about2}</Button></Link>
+        <Button variant="contained"><Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}>{about.button_about2}</Link></Button>
       </div>
     </div>
   )
