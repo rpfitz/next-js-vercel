@@ -39,19 +39,32 @@ const AppBar = styled(MuiAppBar, {
 }));
 
 export default function AppBarComponent({ open, handleDrawerOpen }: any) {
-  const [scrollY, setScrollY] = React.useState(0);
-
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
+  const [isScrolled, setIsScrolled] = React.useState(false);
 
   React.useEffect(() => {
+    let isMounted = true;
+    let timeout: any;
+
+    const handleScroll = () => {
+      setIsScrolled(true);
+
+      // Reinicia o temporizador a cada vez que o usuário rola a página
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        setIsScrolled(false);
+      }, 0); // Ajuste o valor do intervalo conforme necessário
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+
+    return () => {
+      isMounted = false;
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
-  const isScrolled = scrollY > 0;
-  
   const mediaQueryStyle = {
     '@media screen and (maxWidth: 800px)': {
       margin: "0",

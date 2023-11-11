@@ -41,6 +41,8 @@
 
 .scrolledAppBar {
   opacity: 0.8;
+  /* background-color: rgba(0, 0, 0, 1); */
+
   /* Outros estilos que você deseja aplicar quando rolado */
 }
 
