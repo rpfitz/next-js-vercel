@@ -30,7 +30,7 @@ export default function HomePage() {
         </div>
         <Typography style={clientStyles.paragraph1} variant="body1" gutterBottom>{home.text_message}</Typography>
         <div className={styles.buttonSession1}>
-          <Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}><Button variant="contained">{home.button_message}</Button></Link>
+          <Button variant="contained"><Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}>{home.button_message}</Link></Button>
         </div>
       </div>
       <div className={styles.session2}>

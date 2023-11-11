@@ -41,7 +41,6 @@ export default function HomePageMobile() {
             <span className={styles.textMessage}>{home.text_message}</span>
           </Typography>
           <div className={styles.button_session1}>
-            <Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}><Button variant="contained">{home.button_message}</Button></Link>
             <Button variant="contained"><Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}>{home.button_message}</Link></Button>
           </div>
         </div>

@@ -12,6 +12,8 @@
   background-color: #2b2b2c;
   /* position: inherit; */
   display: flex;
+  flex-direction: column;
+  color: white;
   align-items: center;
   text-align: center;
 }

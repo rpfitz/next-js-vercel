@@ -6,6 +6,9 @@ import Button from '@mui/material/Button';
 
 import { about } from '@/config-app';
 
+let whatsAppSendMessageLink = `https://wa.me/5582987241343?text=`
+let iconWhatsAppMessage = `Olá Dra Valéria, tudo bem? Gostaria de saber mais informações sobre sua consulta.`
+
 export default function AboutPage() {
   return (
     <div id="about" className={styles.aboutPageComponent}>
@@ -18,7 +21,7 @@ export default function AboutPage() {
         <h2>{about.header_about2}</h2>
         <p>{about.paragraph_about2}</p>
         <p>{about.paragraph2_about2}</p>
-        <Button variant="contained"><Link href="#contact">{about.button_about2}</Link></Button>
+        <Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}><Button variant="contained">{about.button_about2}</Button></Link>
       </div>
     </div>
   )
