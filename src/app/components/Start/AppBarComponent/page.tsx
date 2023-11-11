@@ -54,7 +54,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
     <AppBar
       sx={{ boxShadow: 'none' ,}}
       position="fixed" open={open} >
-      <Toolbar className={styles.ToolbarComponent} style={{
+      <Toolbar style={{
         ...mediaQueryStyle,
         backgroundColor: `#f9faff`,
         display: `flex`,

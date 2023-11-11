@@ -9,15 +9,31 @@ import Button from '@mui/material/Button';
 import { home } from '@/config-app'
 
 let whatsAppSendMessageLink = `https://wa.me/5582987241343?text=`
-let iconWhatsAppMessage = `Olá Dra Valéria, tudo bem? Gostaria de mais informações sobre a sua consulta.`
+let iconWhatsAppMessage = `Olá Dra Valéria, tudo bem? Gostaria de marcar uma consulta.`
+
+const clientStyles = {
+  header1: { lineHeight: '0.5em', fontSize: '2.2em', margin: 0, padding: 0, },
+  header2: { lineHeight: '2em', fontSize: '2.3em', margin: 0, padding: 0, },
+}
+
+const mediaQueryStyle = {
+  '@media screen and (minWidth: 801px)': {
+    margin: "0",
+    padding: `0em 6rem`,
+  },
+  '@media screen and (maxWidth: 800px)': {
+    margin: "0",
+    padding: '0',
+  },
+};
 
 export default function HomePageMobile() {
   return (
     <div id="home" className={styles.container}>
       <div className={styles.session1}>
         <div className={styles.headers}>
-          <Typography className={styles.header1} variant="h2" gutterBottom  >{home.first_header}</Typography>
-          <Typography className={styles.header2} variant="h2" gutterBottom><strong>{home.second_header}</strong></Typography>
+          <Typography style={clientStyles.header1} variant="h2" gutterBottom  >{home.first_header}</Typography>
+          <Typography style={clientStyles.header2} variant="h2" gutterBottom><strong>{home.second_header}</strong></Typography>
         </div>
         <Image src={`/${home.hero_img_src_mobile}`} alt={home.alt_hero_image} width={300} height={600} />
         <div>
@@ -26,7 +42,7 @@ export default function HomePageMobile() {
           </Typography>
           <div className={styles.button_session1}>
             <Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}><Button variant="contained">{home.button_message}</Button></Link>
-            {/* <Button variant="contained"><Link href="#contact">{home.button_message}</Link></Button> */}
+            <Button variant="contained"><Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}>{home.button_message}</Link></Button>
           </div>
         </div>
       </div>

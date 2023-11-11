@@ -1,12 +1,3 @@
-/* doesn't work here? */
-.ToolbarComponent {
-  padding: 1em 6rem;
-  background-color: #f9faff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .TentandoOne {
   display: flex;
   width: 100%;
@@ -62,12 +53,6 @@
 
   .menuItems {
     display: none;
-  }
-
-  .ToolbarComponent {
-    margin: 0;
-    padding: 0;
-    padding: 0 1em;
   }
 
   .TentandoOneLogo {
