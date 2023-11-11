@@ -40,7 +40,7 @@ export default function FaqPage() {
             )
           })}
         </div>
-        <Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}><Button className={styles.button_session1} variant="contained">{button_message}</Button></Link>
+        <Button className={styles.button_session1} variant="contained"><Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}>{button_message}</Link></Button>
       </div>
     </div>
   )
