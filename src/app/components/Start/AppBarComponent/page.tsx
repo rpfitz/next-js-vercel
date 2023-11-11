@@ -52,7 +52,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         setIsScrolled(false);
-      }, 0); // Ajuste o valor do intervalo conforme necessário
+      }, 1000); // Ajuste o valor do intervalo conforme necessário
     };
 
     window.addEventListener('scroll', handleScroll);
