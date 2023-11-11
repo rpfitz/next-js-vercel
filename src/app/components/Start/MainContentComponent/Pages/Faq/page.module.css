@@ -32,6 +32,8 @@
 }
 
 .button_session1 a {
+  background-color: #a98955;
+
   text-decoration: inherit;
   color: white;
   text-transform: none;
