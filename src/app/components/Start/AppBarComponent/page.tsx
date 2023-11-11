@@ -59,7 +59,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
               <MenuIcon className={styles.MenuIcon} style={{ height: 35, width: 50 }} />
             </IconButton>
           </Link>
-          <Link href="#home" style={{ textDecoration: 'none', color: '#a98955' }}>
+          <Link href="/" style={{ textDecoration: 'none', color: '#a98955' }}>
             <Image
               className={styles.TentandoOneLogo}
               src={'/logovaleriasiqueira.png'}

@@ -1,6 +1,6 @@
 import styles from './page.module.css'
 
-import { Divider } from '@mui/material';
+import { Button, Divider } from '@mui/material';
 
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -10,6 +10,11 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import { faq } from '@/config-app';
+import Link from 'next/link';
+
+const button_message = 'Tirar dúvida'
+let whatsAppSendMessageLink = `https://wa.me/5582987241343?text=`
+let iconWhatsAppMessage = `Olá Dra Valéria, tudo bem? Gostaria de tirar uma dúvida.`
 
 export default function FaqPage() {
   return (
@@ -35,6 +40,7 @@ export default function FaqPage() {
             )
           })}
         </div>
+        <Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}><Button className={styles.button_session1} variant="contained">{button_message}</Button></Link>
       </div>
     </div>
   )

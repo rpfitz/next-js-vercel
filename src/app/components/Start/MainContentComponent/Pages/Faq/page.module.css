@@ -20,6 +20,24 @@
   padding: 0;
 }
 
+/*  */
+.button_session1 {
+  width: 180px;
+  height: 50px;
+  font-weight: bold;
+  background-color: #a98955;
+  border: none;
+  color: white;
+  margin: 2em 0;
+}
+
+.button_session1 a {
+  text-decoration: inherit;
+  color: white;
+  text-transform: none;
+  font-size: 1.5em;
+}
+
 @media screen and (max-width: 800px) {
   .faqPageSessionOneComponent {
     align-items: center;
