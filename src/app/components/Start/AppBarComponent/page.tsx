@@ -44,7 +44,13 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
       className={styles.AppBarZero}
       sx={{ boxShadow: 'none' }}
       position="fixed" open={open}>
-      <Toolbar className={styles.ToolbarComponent}>
+      <Toolbar className={styles.ToolbarComponent} style={{
+        padding: `1em 6rem`,
+        backgroundColor: `#f9faff`,
+        display: `flex`,
+        justifyContent: `space-between`,
+        alignItems: `center`,
+      }}>
         <div className={styles.TentandoOne} style={{ justifyContent: open ? 'flex-start' : '' }}>
           <Link href="#home" style={{ textDecoration: 'none', color: '#a98955' }}>
             <IconButton
@@ -71,9 +77,9 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
         </div>
         <div className={styles.menuItems}>
           <ul className={styles.menuListItems}>
-            <li><Typography variant="h6" gutterBottom><Link href="#home" style={{ textDecoration: 'none', color: 'inherit' }}>Início</Link></Typography></li>
-            <li><Typography variant="h6" gutterBottom><Link href="#about" style={{ textDecoration: 'none', color: 'inherit' }}>Sobre</Link></Typography></li>
-            <li><Typography variant="h6" gutterBottom><Link href="#faq" style={{ textDecoration: 'none', color: 'inherit' }}>Dúvidas</Link></Typography></li>
+            <li><Typography variant="h6" gutterBottom><Link href="#home" style={{ textDecoration: 'none', color: 'black' }}>Início</Link></Typography></li>
+            <li><Typography variant="h6" gutterBottom><Link href="#about" style={{ textDecoration: 'none', color: 'black' }}>Sobre</Link></Typography></li>
+            <li><Typography variant="h6" gutterBottom><Link href="#faq" style={{ textDecoration: 'none', color: 'black' }}>Dúvidas</Link></Typography></li>
             <li style={{
               backgroundColor: '#a98955',
               width: '130px',
