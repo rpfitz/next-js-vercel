@@ -10,23 +10,21 @@ import { home } from '@/config-app'
 
 export default function HomePageMobile() {
   return (
-    <div id="home" className={styles.homePageComponentMobile}>
-      <div className={styles.homePageSessionOneComponent}>
-        <div className={styles.tryTheBest}>
-          <Typography className={styles.homePageSessionOneComponentHahahaha2} variant="h2" gutterBottom  >{home.first_header}</Typography>
-          <Typography className={styles.homePageSessionOneComponentHahahaha} variant="h2" gutterBottom><strong>{home.second_header}</strong></Typography>
+    <div id="home" className={styles.container}>
+      <div className={styles.session1}>
+        <div className={styles.headers}>
+          <Typography className={styles.header1} variant="h2" gutterBottom  >{home.first_header}</Typography>
+          <Typography className={styles.header2} variant="h2" gutterBottom><strong>{home.second_header}</strong></Typography>
         </div>
         <Image src={`/${home.hero_img_src_mobile}`} alt={home.alt_hero_image} width={300} height={600} />
         <div>
           <Typography variant="body1" gutterBottom style={{ fontSize: '1.3em' }}>
-            <span className={styles.textinResponsivo}>{home.text_message}</span>
+            <span className={styles.textMessage}>{home.text_message}</span>
           </Typography>
-          <div className={styles.homePageSessionOneButtonsComponent}>
+          <div className={styles.button_session1}>
             <Button variant="contained"><Link href="#contact">{home.button_message}</Link></Button>
           </div>
         </div>
-      </div>
-      <div className={styles.homePageSessionTwoComponent}>
       </div>
     </div>
   )
