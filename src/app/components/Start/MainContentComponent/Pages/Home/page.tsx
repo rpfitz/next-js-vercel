@@ -8,6 +8,9 @@ import Button from '@mui/material/Button';
 
 import { home } from '@/config-app'
 
+let whatsAppSendMessageLink = `https://wa.me/5582987241343?text=`
+let iconWhatsAppMessage = `Olá Dra Valéria, tudo bem? Gostaria de marcar uma consulta.`
+
 export default function HomePage() {
   return (
     <div id="home" className={styles.container}>
@@ -18,7 +21,7 @@ export default function HomePage() {
         </div>
         <Typography className={styles.paragraph1} variant="body1" gutterBottom>{home.text_message}</Typography>
         <div className={styles.buttonSession1}>
-          <Button variant="contained"><Link href="#contact">{home.button_message}</Link></Button>
+          <Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}><Button variant="contained">{home.button_message}</Button></Link>
         </div>
       </div>
       <div className={styles.session2}>

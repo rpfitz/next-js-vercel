@@ -12,7 +12,7 @@ import { Divider } from '@mui/material'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 let whatsAppSendMessageLink = `https://wa.me/5582987241343?text=`
-let iconWhatsAppMessage = `Olá, gostaria de saber mais informações sobre a consulta.`
+let iconWhatsAppMessage = `Olá Dra Valéria, tudo bem? Gostaria de mais informações sobre a sua consulta.`
 
 export default function Home() {
   const [open, setOpen] = React.useState(false);

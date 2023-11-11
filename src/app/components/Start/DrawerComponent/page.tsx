@@ -53,6 +53,9 @@ const menu_list = [
   },
 ]
 
+let whatsAppSendMessageLink = `https://wa.me/5582987241343?text=`
+let iconWhatsAppMessage = `Olá Dra Valéria, tudo bem? Gostaria de mais informações sobre a sua consulta.`
+
 export default function DrawerComponent({ open, handleDrawerClose }: any) {
   const theme = useTheme();
 
@@ -77,10 +80,10 @@ export default function DrawerComponent({ open, handleDrawerClose }: any) {
       </DrawerHeader>
       <Divider />
       <div className={styles.menuContent}>
-        <List>
+        <List style={{ }}>
           {menu_list.map((item: any) => {
             return (
-              <ListItem key={item.name} disablePadding>
+              <ListItem className={styles.listItemMenuContent} key={item.name} disablePadding>
                 <Link href={item.path} style={{ textDecoration: 'none', }} onClick={handleDrawerClose}>
                   <ListItemButton >
                     <ListItemText className={styles.ListItemText} primary={item.name}>
@@ -94,10 +97,24 @@ export default function DrawerComponent({ open, handleDrawerClose }: any) {
         </List>
         <Divider />
         <div className={styles.socialMenuIcons}>
-          <div className={styles.menuIcons}><InstagramIcon className={styles.menuIcon} /></div>
-          <div className={styles.menuIcons}><FacebookIcon className={styles.menuIcon} /></div>
-          <div className={styles.menuIcons}><WhatsAppIcon className={styles.menuIcon} /></div>
-          <div className={styles.menuIcons}><LinkedInIcon className={styles.menuIcon} /></div>
+          <div className={styles.menuIcons}>
+            <Link style={{ color: 'inherit' }} href={`https://www.instagram.com/dra.valeriasiqueira/`}>
+              <InstagramIcon />
+            </Link>
+          </div>
+
+          <div className={styles.menuIcons}>
+            <Link style={{ color: 'inherit' }} href={``}>
+              <FacebookIcon />
+            </Link>
+          </div>
+
+          <div className={styles.menuIcons}>
+            <Link style={{ color: 'inherit' }} href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}>
+              <WhatsAppIcon />
+            </Link>
+          </div>
+
         </div>
       </div>
     </Drawer>
