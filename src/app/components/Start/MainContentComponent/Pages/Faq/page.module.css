@@ -20,25 +20,35 @@
   padding: 0;
 }
 
-/*  */
+/**/
 .button_session1 {
-  width: 180px;
-  height: 50px;
-  font-weight: bold;
+  /* margin: 0; */
+  /* padding: 0; */
   background-color: #a98955;
-  border: none;
-  color: white;
-  margin: 2em 0;
+  margin: 1em;
+  width: 140px;
+  height: 40px;
+}
+
+.button_session1 button {
+  background-color: #a98955;
+  margin: 1em;
+  width: 140px;
+  height: 40px;
+}
+
+.button_session1:hover {
+  background-color: #e0bb7f;
 }
 
 .button_session1 a {
-  background-color: #a98955;
+  /* background-color: #e0bb7f; */
 
   text-decoration: inherit;
   color: white;
   text-transform: none;
-  font-size: 1.5em;
 }
+/**/
 
 @media screen and (max-width: 800px) {
   .faqPageSessionOneComponent {

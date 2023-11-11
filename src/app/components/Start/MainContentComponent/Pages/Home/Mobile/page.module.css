@@ -22,11 +22,15 @@
   gap: 1em;
 }
 
+.button_session1 button:hover {
+  background-color: #e0bb7f;
+}
+
 .button_session1 button a {
   text-decoration: inherit;
   color: white;
   text-transform: none;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #home {
@@ -117,7 +121,7 @@
 
   .button_session1 button {
     width: 220px;
-    height: 60px;
+    height: 50px;
     font-weight: bold;
     background-color: #a98955;
     border: none;
@@ -125,5 +129,6 @@
     margin: 2em 0;
     margin: 1em;
     padding: 0;
+    font-size: 1em;
   }
 }
