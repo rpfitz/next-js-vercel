@@ -17,11 +17,11 @@ export default function FooterComponent({ open }: any) {
     <div id="contact" className={styles.footerComponent} style={open ? { opacity: 0.5, marginLeft: '14em' } : {}}>
       <div className={styles.footerSessionOneComponent}>
         <div><h3>Endereço</h3><p><a className={styles.footerAnchorItemOne} href={googleMapsAddress}>The Square - Av. Dr. Antônio Gomes de Barros, 625 - Sala 712 - Jatiúca, Maceió - AL, 57036-001</a></p></div>
-        <div><h3>Contato</h3><p><a className={styles.footerAnchorItemOne} href="">(82) 99831-9969</a></p></div>
-        <div><h3>Email</h3><p><a className={styles.footerAnchorItemOne} href="">dra.valeriasiqueira@outlook.com</a></p></div>
+        <div><h3>Contato</h3><p><a className={styles.footerAnchorItemOne} href="tel:+5582998319969">(82) 99831-9969</a></p></div>
+        <div><h3>Email</h3><p><a className={styles.footerAnchorItemOne} href="mailto:dra.valeriasiqueira@outlook.com">dra.valeriasiqueira@outlook.com</a></p></div>
         <div>
           <h3>Redes Sociais:</h3>
-          <div className={styles.contactFlexSessionTwoComponent} style={{ display: 'flex', gap: '0.25em', color: 'rgb(223, 178, 66)' }}>
+          <div className={styles.contactFlexSessionTwoComponent} style={{ display: 'flex', gap: '0.25em', color: '#a98955' }}>
             <div style={{ display: 'flex', gap: '0.5em', }}>
               <Link style={{ color: 'inherit' }} href="https://www.instagram.com/dra.valeriasiqueira/">
                 <InstagramIcon />
