@@ -1,7 +1,7 @@
 export const home = {
   first_header: `Descubra uma vida`,
   second_header: `Mais saúdavel hoje`,
-  text_message: `Sou Dra Valéria Siqueira, médica clínica com uma abordagem centrada no estilo de vida saudável. Quero te ajudar a alcançar o seu melhor estado de saúde, prevenindo e tratando doenças, enquanto priorizamos seu bem-estar e qualidade de vida.`,
+  text_message: `Sou Dra. Valéria Siqueira, médica clínica com uma abordagem centrada no estilo de vida saudável. Quero ajudar você a alcançar o seu melhor estado de saúde, prevenindo e tratando doenças, ao mesmo tempo que priorizamos o seu bem-estar e qualidade de vida.`,
   button_message: `Marcar Consulta`,
   alt_hero_image: `Dra. Valéria Siqueira`,
   hero_img_src_mobile: 'valphill1cortada.png',
@@ -38,10 +38,10 @@ export const about = {
   header_about1: `Sobre mim`,
   header2_about1: `Dra. Valéria Siqueira`,
   paragraph_about1: `CRMAL 3369 RQE 1560`,
-  paragraph2_about1: `Dra. Valéria Siqueira, uma médica dedicada com 29 anos de experiência, é uma referência em cuidados médicos personalizados e compassivos. Sua jornada na medicina começou com a graduação pela ECMAL, seguida pela Residência Médica na HUPAA, onde desenvolveu sua em Clínica Médica e Medicina Integrativa/Funcional.`,
-  paragraph3_about1: `Sua abordagem à medicina vai além do tratamento convencional, refletindo seu compromisso inabalável com o bem-estar integral. Dra. Valéria é reconhecida por seu estilo de vida dedicado à longevidade saudável, onde aprender constantemente é uma paixão que se reflete em sua prática médica.`,
+  paragraph2_about1: `Dra. Valéria Siqueira, uma médica dedicada com 29 anos de experiência, é uma referência em cuidados médicos personalizados e compassivos. Sua jornada na medicina começou com a graduação pela ECMAL, seguida pela Residência Médica na HUPAA, onde desenvolveu sua expertise em Clínica Médica e Medicina Integrativa/Funcional.`,
+  paragraph3_about1: `Sua abordagem à medicina vai além do tratamento convencional, refletindo seu compromisso inabalável com o bem-estar integral. Dra. Valéria é reconhecida por seu estilo de vida dedicado à longevidade saudável, sendo a aprendizagem constante uma paixão que se reflete em sua prática médica`,
   header_about2: `Abordagem`,
-  paragraph_about2: `Dra. Valéria se destaca como especialista em Clínica Médica e Medicina Integrativa/Funcional, oferecendo cuidados especializados que consideram não apenas os sintomas, mas a pessoa como um todo. Sua abordagem única resulta em tratamentos personalizados, combinando precisão diagnóstica com uma compreensão profunda das necessidades individuais.`,
-  paragraph2_about2: `A Clínica Médica proporciona diagnósticos certeiros e tratamentos eficazes, enquanto a Medicina Integrativa/Funcional visa abordar as origens dos problemas de saúde, promovendo uma cura completa e duradoura.`,
+  paragraph_about2: `Dra. Valéria destaca-se como especialista em Clínica Médica e Medicina Integrativa/Funcional, proporcionando cuidados especializados que consideram não apenas os sintomas, mas a pessoa como um todo. Sua abordagem única resulta em tratamentos personalizados, combinando precisão diagnóstica com uma compreensão profunda das necessidades individuais.`,
+  paragraph2_about2: `A Clínica Médica oferece diagnósticos precisos e tratamentos eficazes, ao passo que a Medicina Integrativa/Funcional busca abordar as origens dos problemas de saúde, promovendo uma cura completa e duradoura.`,
   button_about2: `Saiba mais`,
 }
