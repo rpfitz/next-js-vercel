@@ -40,7 +40,7 @@ export default function FaqPage() {
             )
           })}
         </div>
-        <Button className={styles.button_session1} style={{ backgroundColor: '#a98955', }} variant="contained"><Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}>{button_message}</Link></Button>
+        <Link href={`${whatsAppSendMessageLink}${iconWhatsAppMessage}`}><Button variant="contained" style={{ backgroundColor: '#a98955', }}>{button_message}</Button></Link>
       </div>
     </div>
   )
