@@ -39,6 +39,19 @@ const AppBar = styled(MuiAppBar, {
 }));
 
 export default function AppBarComponent({ open, handleDrawerOpen }: any) {
+  const [scrollY, setScrollY] = React.useState(0);
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const isScrolled = scrollY > 0;
+  
   const mediaQueryStyle = {
     '@media screen and (maxWidth: 800px)': {
       margin: "0",
@@ -57,6 +70,7 @@ export default function AppBarComponent({ open, handleDrawerOpen }: any) {
 
   return (
     <AppBar
+      className={isScrolled ? styles.scrolledAppBar : ''}
       sx={{ boxShadow: 'none', }}
       position="fixed" open={open} >
       <Toolbar style={{

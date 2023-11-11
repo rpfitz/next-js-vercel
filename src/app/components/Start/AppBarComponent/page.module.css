@@ -39,6 +39,11 @@
   text-transform: none;
 }
 
+.scrolledAppBar {
+  opacity: 0.8;
+  /* Outros estilos que você deseja aplicar quando rolado */
+}
+
 @media screen and (max-width: 800px) {
   .TentandoOne {
     justify-content: space-between;
