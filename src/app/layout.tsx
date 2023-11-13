@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Dra. Valéria Siqueira | Consulta de Qualidade',
-  description: 'Consulta de Qualidade',
+  title: 'Dra. Valéria Siqueira | Medicina Integrativa em Maceió - Alagoas',
+  description: 'Clínica Médica',
 }
 
 export default function RootLayout({
